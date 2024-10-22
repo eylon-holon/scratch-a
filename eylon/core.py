@@ -1,91 +1,62 @@
 import builtins
 import datetime
 import inspect
-import os
-import traceback
-from git import Repo
 
+from eylon.utils import *
 from eylon.post import post
+from eylon.classwork import ClassWork
 from config import cfg
-
-
-###################################
-
-def fname(f):
-    return f"{f.__name__}()"
-
-def get_notebook_name(str):
-    suffixAt = str.find(".ipynb")
-    if suffixAt == -1: return -1
-    return str[:suffixAt+6:].split('/')[-1]
-
-def get_notebook_name_from_stack():
-    for trace, _ in traceback.walk_stack(None):
-        cellId = trace.f_locals.get('cell_id', -1)
-        if cellId == -1: continue
-        name = get_notebook_name(cellId)
-        if name != -1: return name
-    return 'unknown'
-
-def get_current_branch():
-    repo = Repo(os.getcwd())
-    branch = repo.active_branch
-    return branch.name
-
-###################################
-
-def cls():
-    os.system('cls' if os.name=='nt' else 'clear')
-
-def printAt(y, x, str):
-    builtins.print(f'\x1b[{y};{x}H{str}')
-
-def print(*args, **kwargs):
-    builtins.print("==>", *args, **kwargs)
-
-def input(msg):
-    return builtins.input(msg)
-
-###################################
-
-class ClassWork:
-    def __init__(self, notebook, desc):
-        self.notebook = notebook
-        self.lesson = notebook.split('.')[0]
-        self.branch = get_current_branch()
-        self.desc = {fname(f): io for f, io in desc.items()}
 
 
 work = None
 
+
 ###################################
 
-def test_submission(func, input):
-    return True
+def print(*args, **kwargs):
+    if work != None:
+        work.print(*args, **kwargs)
+    builtins.print(*args, **kwargs)
 
-def post_results(func, input, output):
+def input(prompt):
+    answer = work.input() if work != None else None
+    if (answer == None):
+        answer = builtins.input(prompt)
+    return answer
+
+
+###################################
+
+def test_submission(func, input, expected):
+    with work.capture_io(input):
+        func()
+    return expected
+
+def post_results(fname, src, input, output, expected):
     request = {
         'now': datetime.datetime.now().isoformat(),
         'docId': cfg.docId,
         'branch': work.branch,
         'lesson': work.lesson,
-        'fname': func.__name__,
-        'src': inspect.getsource(func),
+        'fname': fname,
+        'src': src,
         'input': "\n".join(input),
         'output': "\n".join(output),
+        'expected': "\n".join(expected),
         'tags': ' '.join(cfg.tags)
     }
     response = post(cfg.api, request)
     return response["msg"]
 
+
 ###################################
 
-def start_class(desc):
+def start(desc):
     global work
     notebook = get_notebook_name_from_stack()
     work = ClassWork(notebook, desc)
-    print("You have started class in", notebook)
-    print("Please implement the following funcitons:", ','.join(map(lambda f: f"'{fname(f)}'", desc.keys())))
+    post_results("Here😁", "", [], [], [])
+    print("Let's start 🙌, those are waiting 🛠️: ", ','.join(map(lambda f: f"'{fname(f)}'", desc.keys())))
 
     
 def submit(func, input):
@@ -94,14 +65,15 @@ def submit(func, input):
         print("Please, start the class first")
         return
     if fn not in work.desc:
-        print(f"function '{fn}' is not part of the class work")
+        print(f"function '{fn}' is not part of this lesson")
         return
     src = inspect.getsource(func)
-    file = get_notebook_name_from_stack()
-    if not test_submission(func, input):
+    expected = work.desc[fn][1]
+    output = test_submission(func, input, expected)
+    if output == None:
         print(f"Your work has errors. Please, fix and submit again.")
         return
-    msg = post_results(func, input, ["no-output-yet"])
+    msg = post_results(func.__name__, src, input, output, expected)
     print(msg)
 
 ###################################
