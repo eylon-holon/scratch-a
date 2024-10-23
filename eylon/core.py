@@ -73,7 +73,7 @@ def start(desc):
     notebook = get_notebook_name_from_stack()
     work = ClassWork(notebook, desc)
     post_results("Here😁", "", [], [], [])
-    print("Let's start 🙌, those are waiting 🛠️: ", ','.join(desc.keys()))
+    print(f"Hi {work.branch} 😁! Let's start the lesson... 🙌")
 
     
 def submit(func):
