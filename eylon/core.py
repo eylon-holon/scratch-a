@@ -76,6 +76,25 @@ def submit(func, input):
     msg = post_results(func.__name__, src, input, output, expected)
     print(msg)
 
+
+def missing(lesson, people):
+    now = datetime.datetime.now().isoformat()
+    for stu in people:
+        request = {
+            'now': now,
+            'docId': cfg.docId,
+            'branch': stu,
+            'lesson': lesson,
+            'fname': "",
+            'src': "",
+            'input': "",
+            'output': "",
+            'expected': "",
+            'tags': ' '.join(cfg.tags)
+        }
+        post(cfg.api, request)
+
+
 ###################################
 
 def get_next_class():
