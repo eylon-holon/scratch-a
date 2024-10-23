@@ -30,7 +30,24 @@ def input(prompt):
 def test_submission(func, input, expected):
     with work.capture_io(input):
         func()
-    return expected
+    output = work.get_prints()
+    failed = False
+    for exp in expected:
+        found = False
+        for line in output:
+            if exp in line:
+                found = True
+                break
+        if not found:
+            print(f"'{exp}' is not found in output lines")
+            print("---------------------------------------------------")
+            for line in output:
+                print(line.strip())
+            print("---------------------------------------------------")
+            failed = True
+    if failed:
+        return None
+    return output
 
 def post_results(fname, src, input, output, expected):
     request = {
@@ -56,10 +73,10 @@ def start(desc):
     notebook = get_notebook_name_from_stack()
     work = ClassWork(notebook, desc)
     post_results("Here😁", "", [], [], [])
-    print("Let's start 🙌, those are waiting 🛠️: ", ','.join(map(lambda f: f"'{fname(f)}'", desc.keys())))
+    print("Let's start 🙌, those are waiting 🛠️: ", ','.join(desc.keys()))
 
     
-def submit(func, input):
+def submit(func):
     fn = fname(func)
     if work == None:
         print("Please, start the class first")
@@ -68,6 +85,7 @@ def submit(func, input):
         print(f"function '{fn}' is not part of this lesson")
         return
     src = inspect.getsource(func)
+    input = work.desc[fn][0]
     expected = work.desc[fn][1]
     output = test_submission(func, input, expected)
     if output == None:

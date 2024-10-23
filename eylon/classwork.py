@@ -6,7 +6,7 @@ class ClassWork:
         self.notebook = notebook
         self.lesson = notebook.split('.')[0]
         self.branch = get_current_branch()
-        self.desc = {fname(f): io for f, io in desc.items()}
+        self.desc = desc
 
         self._print_buf = []
         self._print_on = False
