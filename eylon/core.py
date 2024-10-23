@@ -1,6 +1,7 @@
 import builtins
 import datetime
 import inspect
+import os
 
 from eylon.utils import *
 from eylon.post import post
@@ -98,5 +99,7 @@ def missing(lesson, people):
 ###################################
 
 def get_next_class():
-    pass
+    cmd = "git pull origin main"
+    stdout = os.popen(cmd).read()
+    print(stdout)
 
