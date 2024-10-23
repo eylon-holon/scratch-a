@@ -1,7 +1,6 @@
 import builtins
 import datetime
 import inspect
-import os
 
 from eylon.utils import *
 from eylon.post import post
@@ -98,8 +97,12 @@ def missing(lesson, people):
 
 ###################################
 
-def get_next_class():
-    cmd = "git pull origin main"
-    stdout = os.popen(cmd).read()
-    print(stdout)
+def store_all_changes_to_github():
+    os_cmd("git add -A")
+    os_cmd('git commit -m "auto commit..."')
+    os_cmd("git push")
+
+
+def get_next_lesson():
+    os_cmd("git pull origin main")
 
