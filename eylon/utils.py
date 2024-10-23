@@ -32,6 +32,9 @@ def printAt(y, x, str):
     print(f'\x1b[{y};{x}H{str}')
 
 def os_cmd(cmd):
-    stdout = os.popen(cmd).read()
-    print(stdout)
+    try:
+        stdout = os.popen(cmd).read()
+        print(stdout)
+    except Exception as e:
+        print(e)
 
