@@ -34,7 +34,8 @@ class ClassWork:
             return
         with io.StringIO() as buf:
             print(*args, file=buf, **kwargs)
-            self._print_buf.append(buf.getvalue())
+            line = buf.getvalue()
+            self._print_buf.append(line.strip())
 
     def input(self):
         if self._input_at >= len(self._input_buf):

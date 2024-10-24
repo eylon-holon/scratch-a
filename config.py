@@ -1,7 +1,6 @@
 class Config:
     def __init__(self):
         self.tags = ['eylon', 'amat', 'tet']
-        self.docId = "1QCl5IP6mvQBeUhoTpd0q9rij6rxSXsqm32vxfLT7MNk"
-        self.api = "https://script.google.com/macros/s/AKfycbzoRAjGIsQXbrlGNBug0U1yJOsuOVGVYgtc_kQWXsMHoYLtt7XJ4Niro2Y8vwutXWD_YQ/exec"
+        self.docId = "17Fe6Y2xtxYtG0Trp9tnOZa-KU1jGzShRl2SW7Ufb-wo"
 
 cfg = Config()
