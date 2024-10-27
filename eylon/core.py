@@ -141,6 +141,5 @@ def store_all_changes_to_github():
 
 
 def get_next_lesson():
-    os_cmd("git pull origin main --no-ff --no-edit")
-    os_cmd("git push")
+    os_cmd("git pull origin main --no-ff --no-edit && git push")
 
