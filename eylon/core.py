@@ -6,7 +6,7 @@ import json
 from eylon.utils import *
 from eylon.post import post
 from eylon.classwork import ClassWork
-from config import cfg
+from eylon.config import cfg
 
 
 work = None
@@ -141,6 +141,5 @@ def store_all_changes_to_github():
 
 
 def get_next_lesson():
-    os_cmd("git pull origin main --no-ff --no-edit")
-    os_cmd("git push")
+    os_cmd("git pull origin main --no-ff --no-edit && git push")
 
