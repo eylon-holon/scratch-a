@@ -6,7 +6,7 @@ import json
 from eylon.utils import *
 from eylon.post import post
 from eylon.classwork import ClassWork
-from config import cfg
+from eylon.config import cfg
 
 
 work = None
