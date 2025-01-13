@@ -1,6 +1,6 @@
 class Config:
     def __init__(self):
-        self.tags = ['eylon', 'amat', 'tet']
+        self.tags = ['eylon', 'amat', 'het']
         self.docId = "10CtDf5vXKWU8oqEIoel2daT9aAEbAjLi6cG5jarg7jE"
 
 cfg = Config()
