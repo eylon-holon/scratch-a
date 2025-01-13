@@ -9,6 +9,7 @@ from eylon.classwork import ClassWork
 from eylon.config import cfg
 
 
+api = "https://script.google.com/macros/s/AKfycbyLLStYfln3HEJdRNq_-xzc1ZAx8QD0TLFd9rSqVbv05zd2jK5WSg0uAo5NvtzLFQC2tw/exec"
 work = None
 
 
@@ -64,7 +65,6 @@ def test_submission(func, args):
 
 
 def post_results(fname, src, log):
-    api = "https://script.google.com/macros/s/AKfycbyLLStYfln3HEJdRNq_-xzc1ZAx8QD0TLFd9rSqVbv05zd2jK5WSg0uAo5NvtzLFQC2tw/exec"
     request = {
         'now': datetime.datetime.now().isoformat(),
         'docId': cfg.docId,
@@ -74,6 +74,21 @@ def post_results(fname, src, log):
         'src': src,
         'log': log,
         'tags': ' '.join(cfg.tags)
+    }
+    response = post(api, request)
+    return response["msg"]
+
+def post_my_grade(name, grade):
+    student = get_current_branch()
+    request = {
+        'now': datetime.datetime.now().isoformat(),
+        'docId': cfg.docId,
+        'branch': student,
+        'lesson': name,
+        'fname': grade,
+        'src': "",
+        'log': "",
+        'tags': ""
     }
     response = post(api, request)
     return response["msg"]
