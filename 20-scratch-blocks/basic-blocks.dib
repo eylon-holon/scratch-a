@@ -1,0 +1,99 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":"csharp","items":[{"aliases":[],"name":"csharp"}]}}
+
+#!html
+
+<script src="../eylon/scratchblocks.min.js"></script>
+<script>
+function scratch(name) {
+    scratchblocks.renderMatching('.' + name, {style: 'scratch3-high-contrast'});
+}
+</script>
+
+#!html
+
+<script>scratch('q-02')</script>
+<pre class="q-02">
+when flag clicked
+move (10) steps
+</pre>
+
+#!markdown
+
+מה זה עושה?
+
+#!html
+
+<script>scratch('q-03')</script>
+<pre class="q-03">
+turn right (10) degrees
+turn left (10) degrees
+</pre>
+
+#!markdown
+
+מה זה עושה?
+
+#!html
+
+<script>scratch('q-04')</script>
+<pre class="q-04">
+go to x: (0) y: (0)
+</pre>
+
+#!markdown
+
+מה זה עושה?
+
+#!html
+
+<script>scratch('q-041')</script>
+<pre class="q-041">
+when gf clicked
+forever
+go to x: (-200) y: (-200)
+wait (1.5) seconds
+go to x: (200) y: (-200)
+wait (1.5) seconds
+glide (0.5) secs to x: (200) y: (200)
+wait (1) seconds
+glide (0.5) secs to x: (-200) y: (-200)
+wait (1) seconds
+end
+</pre>
+
+#!markdown
+
+מה זה עושה?
+
+#!html
+
+<script>scratch('q-05')</script>
+<pre class="q-05">
+if <((num) mod (2)) = [0]> then
+    say (זה מספר זוגי)
+else
+    say (זה מספר אי זוגי)
+end    
+</pre>
+
+#!markdown
+
+מה זה עושה?
+
+#!html
+
+<script>scratch('q-06')</script>
+<pre class="q-06">
+set [sum v] to (0)
+repeat (10)
+    ask (Enter number) and wait
+    set [sum v] to ((sum) + (answer))
+end
+say (sum)
+</pre>
+
+#!markdown
+
+מה זה עושה?
