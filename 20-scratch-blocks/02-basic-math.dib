@@ -1,0 +1,113 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":"csharp","items":[{"aliases":[],"name":"csharp"}]}}
+
+#!html
+
+<script src="../eylon/scratchblocks.min.js"></script>
+<script>
+function scratch(name) {
+    scratchblocks.renderMatching('.' + name, {style: 'scratch3-high-contrast'});
+}
+</script>
+
+#!markdown
+
+---
+הסבר בקצרה מה קוד הבא עושה
+
+#!html
+
+<script>scratch('q-01')</script>
+<pre class="q-01">
+set [n1 v] to (10)
+set [n2 v] to (20)
+say ((n1) + (n2))
+</pre>
+
+#!markdown
+
+---
+הסבר בקצרה מה קוד הבא עושה
+
+#!html
+
+<script>scratch('q-02')</script>
+<pre class="q-02">
+set [n1 v] to (2)
+set [n2 v] to (1)
+say (((6) * ((n1) - (n2))) / (3))
+</pre>
+
+#!markdown
+
+---
+הסבר בקצרה מה קוד הבא עושה
+
+#!html
+
+<script>scratch('q-03')</script>
+<pre class="q-03">
+forever         // הסבר
+    if < touching (mouse pointer v)? > then             // הסבר
+        set [x v] to (pick random (-200) to (200))      // הסבר
+        set [y v] to (pick random (-200) to (200))
+        glide (0.2) secs to x: (x) y: (y)           // הסבר
+    end
+end
+</pre>
+
+#!markdown
+
+---
+הסבר בקצרה מה קוד הבא עושה
+
+#!html
+
+<script>scratch('q-04')</script>
+<pre class="q-04">
+set [dx v] to (pick random (-5) to (5))     // הסבר
+set [dy v] to (pick random (-5) to (5))
+go to x: (0) y: (0)     // הסבר
+forever                     // הסבר
+    change x by (dx)        // הסבר
+    change y by (dy)
+    if < touching (edge v)? > then                      // הסבר
+        if < (x position) < (-200) > then               // הסבר
+            set [dx v] to (pick random (2) to (5))      // הסבר
+        end
+        if < (x position) > (200) > then
+            set [dx v] to (pick random (-5) to (-2))
+        end
+        if < (y position) < (-150) > then
+            set [dy v] to (pick random (2) to (5))
+        end
+        if < (y position) > (150) > then                // הסבר
+            set [dy v] to (pick random (-5) to (-2))    // הסבר
+        end
+    end
+end
+</pre>
+
+#!markdown
+
+---
+הסבר בקצרה מה קוד הבא עושה
+
+#!html
+
+<script>scratch('q-05')</script>
+<pre class="q-05">
+define Secret ((n1)) by ((n2))      // ?מה שם האמיתי של לבנה
+set [result v] to [0]           // ?למה צריך לאפס
+repeat ((n1))
+    change [result v] by ((n2))
+end
+
+ask [Enter number one] and wait
+set [n1 v] to (answer)              // מה זה answer?
+ask [Enter number two] and wait
+set [n12 v] to (answer)             // עוד פעם answer?
+Secret (n1) by (n2)
+say (result)
+</pre>
