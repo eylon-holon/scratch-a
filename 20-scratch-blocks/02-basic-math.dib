@@ -13,8 +13,7 @@ function scratch(name) {
 
 #!markdown
 
----
-הסבר בקצרה מה קוד הבא עושה
+מחבר שני מספרים שנרשום
 
 #!html
 
@@ -27,8 +26,7 @@ say ((n1) + (n2))
 
 #!markdown
 
----
-הסבר בקצרה מה קוד הבא עושה
+זה עושה נ1 פחות נ2 כפול 6 ואז לחלק ב3
 
 #!html
 
@@ -41,8 +39,7 @@ say (((6) * ((n1) - (n2))) / (3))
 
 #!markdown
 
----
-הסבר בקצרה מה קוד הבא עושה
+העכבר נוגעה בדמות אז היא מנסה לברוח וזזה למקום אחר
 
 #!html
 
@@ -59,20 +56,19 @@ end
 
 #!markdown
 
----
-הסבר בקצרה מה קוד הבא עושה
+הפקודה הזאת מזיזה את הדמות לקיר רנדומלי ואז משנה כיוון עוד פעם לפינה רנדומלית.
 
 #!html
 
 <script>scratch('q-04')</script>
 <pre class="q-04">
-set [dx v] to (pick random (-5) to (5))     // הסבר
+set [dx v] to (pick random (-5) to (5))     // בוחר מספר רנדומלי בין 5 ל-5
 set [dy v] to (pick random (-5) to (5))
-go to x: (0) y: (0)     // הסבר
-forever                     // הסבר
-    change x by (dx)        // הסבר
+go to x: (0) y: (0)     // מביא את הדמות למקום כלשהו
+forever                     // הפקודה עובדת כל הזמן
+    change x by (dx)        //x dx להוסיף ל 
     change y by (dy)
-    if < touching (edge v)? > then                      // הסבר
+    if < touching (edge v)? > then                      // אם הוא נוגעה בגבול אז
         if < (x position) < (-200) > then               // הסבר
             set [dx v] to (pick random (2) to (5))      // הסבר
         end
@@ -88,11 +84,6 @@ forever                     // הסבר
     end
 end
 </pre>
-
-#!markdown
-
----
-הסבר בקצרה מה קוד הבא עושה
 
 #!html
 
