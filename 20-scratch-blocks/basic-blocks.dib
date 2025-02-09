@@ -21,7 +21,7 @@ move (10) steps
 
 #!markdown
 
-מה זה עושה?
+כשלוחצים עושה 10 צעדים
 
 #!html
 
@@ -33,7 +33,7 @@ turn left (10) degrees
 
 #!markdown
 
-מה זה עושה?
+מסתובב 10 מעלות
 
 #!html
 
@@ -44,7 +44,7 @@ go to x: (0) y: (0)
 
 #!markdown
 
-מה זה עושה?
+נאדה
 
 #!html
 
@@ -62,10 +62,6 @@ glide (0.5) secs to x: (-200) y: (-200)
 wait (1) seconds
 end
 </pre>
-
-#!markdown
-
-מה זה עושה?
 
 #!html
 
