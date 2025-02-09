@@ -49,8 +49,8 @@ say (((6) * ((n1) - (n2))) / (3))
 <script>scratch('q-03')</script>
 <pre class="q-03">
 forever         // הסבר
-    if < touching (mouse pointer v)? > then             // הסבר
-        set [x v] to (pick random (-200) to (200))      // הסבר
+    if < touching (mouse pointer v)? > then             // עם העכבר נוגע בשחקן אז
+        set [x v] to (pick random (-200) to (200))      //תבחר מספר רנדמלי בין 
         set [y v] to (pick random (-200) to (200))
         glide (0.2) secs to x: (x) y: (y)           // הסבר
     end
