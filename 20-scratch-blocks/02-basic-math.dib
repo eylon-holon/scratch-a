@@ -13,8 +13,7 @@ function scratch(name) {
 
 #!markdown
 
----
-הסבר בקצרה מה קוד הבא עושה
+banana banana banana banana bananaaaaaaaaaaaaa
 
 #!html
 
@@ -24,11 +23,6 @@ set [n1 v] to (10)
 set [n2 v] to (20)
 say ((n1) + (n2))
 </pre>
-
-#!markdown
-
----
-הסבר בקצרה מה קוד הבא עושה
 
 #!html
 
