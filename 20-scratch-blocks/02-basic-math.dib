@@ -13,8 +13,7 @@ function scratch(name) {
 
 #!markdown
 
----
-הסבר בקצרה מה קוד הבא עושה
+כשלוחצים על זה החתול אומר את הסכום של שני המספרים 
 
 #!html
 
@@ -27,8 +26,7 @@ say ((n1) + (n2))
 
 #!markdown
 
----
-הסבר בקצרה מה קוד הבא עושה
+החתול אומר את התוצאה של התרגיל
 
 #!html
 
@@ -41,49 +39,46 @@ say (((6) * ((n1) - (n2))) / (3))
 
 #!markdown
 
----
-הסבר בקצרה מה קוד הבא עושה
+כשלוחצים על זה החתול זז כשאתה מתקרב אליו עם העכבר והוא עושה את זה תמיד
 
 #!html
 
 <script>scratch('q-03')</script>
 <pre class="q-03">
-forever         // הסבר
-    if < touching (mouse pointer v)? > then             // הסבר
-        set [x v] to (pick random (-200) to (200))      // הסבר
+forever         // תמיד
+    if < touching (mouse pointer v)? > then             // אם העכבר נוגע בחתול אז
+        set [x v] to (pick random (-200) to (200))      // 200-[-200] רנדומלי x זה בוחר
         set [y v] to (pick random (-200) to (200))
-        glide (0.2) secs to x: (x) y: (y)           // הסבר
+        glide (0.2) secs to x: (x) y: (y)           //y-ו x  לגלוש למשך 0.2 שניות למקום של 
     end
 end
 </pre>
 
 #!markdown
 
----
-הסבר בקצרה מה קוד הבא עושה
+כשלוחצים על זה גורם לחתול לגלוש לכיוון רנדומלי ואז כשהוא פוגע בקצה הוא גולש לכיוון רנדומלי אחר וככה הוא עושה את זה תמיד
 
 #!html
 
 <script>scratch('q-04')</script>
 <pre class="q-04">
-set [dx v] to (pick random (-5) to (5))     // הסבר
+set [dx v] to (pick random (-5) to (5))     //5-[-5] dx-לבחור מספר רנדומלי ל
 set [dy v] to (pick random (-5) to (5))
-go to x: (0) y: (0)     // הסבר
-forever                     // הסבר
-    change x by (dx)        // הסבר
+go to x: (0) y: (0)     // מביא את הדמות לאמצע
+forever                    // תמיד
+    change x by (dx)        //dx-ב x לשנות את 
     change y by (dy)
-    if < touching (edge v)? > then                      // הסבר
-        if < (x position) < (-200) > then               // הסבר
-            set [dx v] to (pick random (2) to (5))      // הסבר
+    if < touching (edge v)? > then                      // אם החתול הגיע לקצה אז
+            set [dx v] to (pick random (2) to (5))      //בין 2-5 dx תבחר את 
         end
-        if < (x position) > (200) > then
+        if < (x position) < (-200) > then               //גדול מ-200 אז x אם
             set [dx v] to (pick random (-5) to (-2))
         end
         if < (y position) < (-150) > then
             set [dy v] to (pick random (2) to (5))
         end
-        if < (y position) > (150) > then                // הסבר
-            set [dy v] to (pick random (-5) to (-2))    // הסבר
+        if < (y position) > (150) > then                //גדול מ-150 אז y אם 
+            set [dy v] to (pick random (-5) to (-2))    //[-5]-[-2] dy תבחר
         end
     end
 end
@@ -91,8 +86,7 @@ end
 
 #!markdown
 
----
-הסבר בקצרה מה קוד הבא עושה
+ 
 
 #!html
 
