@@ -21,7 +21,7 @@ move (10) steps
 
 #!markdown
 
-מה זה עושה?
+עולך 10 צעדים
 
 #!html
 
@@ -33,7 +33,7 @@ turn left (10) degrees
 
 #!markdown
 
-מה זה עושה?
+מסתובב 10 פעמים לצד אחד ו10 לצד שני
 
 #!html
 
