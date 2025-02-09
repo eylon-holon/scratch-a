@@ -13,7 +13,7 @@ function scratch(name) {
 
 #!markdown
 
----
+זה אומר את התוצאה 30---
 הסבר בקצרה מה קוד הבא עושה
 
 #!html
@@ -27,7 +27,7 @@ say ((n1) + (n2))
 
 #!markdown
 
----
+אומר  10---
 הסבר בקצרה מה קוד הבא עושה
 
 #!html
@@ -48,8 +48,9 @@ say (((6) * ((n1) - (n2))) / (3))
 
 <script>scratch('q-03')</script>
 <pre class="q-03">
-forever         // הסבר
-    if < touching (mouse pointer v)? > then             // הסבר
+forever         //תמיד
+
+    if < touching (mouse pointer v)? > then             אם העכבר נוגע ב...
         set [x v] to (pick random (-200) to (200))      // הסבר
         set [y v] to (pick random (-200) to (200))
         glide (0.2) secs to x: (x) y: (y)           // הסבר
