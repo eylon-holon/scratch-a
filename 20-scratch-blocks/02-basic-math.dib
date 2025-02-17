@@ -11,10 +11,6 @@ function scratch(name) {
 }
 </script>
 
-#!markdown
-
-banana banana banana banana bananaaaaaaaaaaaaa
-
 #!html
 
 <script>scratch('q-01')</script>
@@ -23,6 +19,10 @@ set [n1 v] to (10)
 set [n2 v] to (20)
 say ((n1) + (n2))
 </pre>
+
+#!markdown
+
+הדמות מחברת את המספרים 20+10 ולבסוף אומרת את המספר 30
 
 #!html
 
@@ -35,15 +35,16 @@ say (((6) * ((n1) - (n2))) / (3))
 
 #!markdown
 
----
-הסבר בקצרה מה קוד הבא עושה
+הדמות עושה משוואה ואומרת לבסוף את התשובה שהיא 11.67
 
 #!html
 
 <script>scratch('q-03')</script>
 <pre class="q-03">
-forever         // הסבר
-    if < touching (mouse pointer v)? > then             // הסבר
+forever        
+\\
+ הפעולה תימשך לנצ
+    if < touching (mouse pointer v)? > then        אם המסך נוגע 
         set [x v] to (pick random (-200) to (200))      // הסבר
         set [y v] to (pick random (-200) to (200))
         glide (0.2) secs to x: (x) y: (y)           // הסבר
