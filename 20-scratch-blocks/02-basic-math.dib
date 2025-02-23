@@ -14,7 +14,7 @@ function scratch(name) {
 #!markdown
 
 ---
-הסבר בקצרה מה קוד הבא עושה
+ מה שזה עושה זה מחבר את 10 ו20 ביחד יוצר 30 והשחקן אומק את זה
 
 #!html
 
@@ -27,8 +27,7 @@ say ((n1) + (n2))
 
 #!markdown
 
----
-הסבר בקצרה מה קוד הבא עושה
+זה עושה שהשחקן יגיד 2
 
 #!html
 
@@ -48,11 +47,11 @@ say (((6) * ((n1) - (n2))) / (3))
 
 <script>scratch('q-03')</script>
 <pre class="q-03">
-forever         // הסבר
+forever         // זה עושה את הפקודה לנצח
     if < touching (mouse pointer v)? > then             // עם העכבר נוגע בשחקן אז
         set [x v] to (pick random (-200) to (200))      //תבחר מספר רנדמלי בין 
         set [y v] to (pick random (-200) to (200))
-        glide (0.2) secs to x: (x) y: (y)           // הסבר
+        glide (0.2) secs to x: (x) y: (y)           // תגלשו ב 0.2 שניות להמצא של המסך
     end
 end
 </pre>
@@ -66,13 +65,13 @@ end
 
 <script>scratch('q-04')</script>
 <pre class="q-04">
-set [dx v] to (pick random (-5) to (5))     // הסבר
+set [dx v] to (pick random (-5) to (5))     // זה כותב מספר בין -5 ו5 רנדומלי
 set [dy v] to (pick random (-5) to (5))
-go to x: (0) y: (0)     // הסבר
-forever                     // הסבר
-    change x by (dx)        // הסבר
+go to x: (0) y: (0)     // זה שולח להמצא של המסך
+forever                     // זה עושה את הפקודה לנצח
+    change x by (dx)        //   זה מזיז את השחקן  5צעדים
     change y by (dy)
-    if < touching (edge v)? > then                      // הסבר
+    if < touching (edge v)? >                       // הסבר
         if < (x position) < (-200) > then               // הסבר
             set [dx v] to (pick random (2) to (5))      // הסבר
         end
