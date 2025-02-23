@@ -92,16 +92,17 @@ end
 
 <script>scratch('q-05')</script>
 <pre class="q-05">
-define Secret ((n1)) by ((n2))      // ?מה שם האמיתי של לבנה
+define Secret ((n1)) by ((n2))      //2n-ו n1 מכפלה של 
 set [result v] to [0]           // ?למה צריך לאפס
 repeat ((n1))
     change [result v] by ((n2))
 end
 
 ask [Enter number one] and wait
-set [n1 v] to (answer)              // מה זה answer?
+set [n1 v] to (answer)              //n1 זה מה שאנחנו כותבים שיהיה answer
 ask [Enter number two] and wait
-set [n12 v] to (answer)             // עוד פעם answer?
+set [n12 v] to (answer)             //ש
+                              //2n זה מה שאנחנו כותבים שהיהanswer
 Secret (n1) by (n2)
 say (result)
 </pre>
