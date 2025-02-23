@@ -97,3 +97,7 @@ repeat (10)
 end
 say (sum)
 </pre>
+
+#!markdown
+
+ זה אומר על לרשום מספר  שמשנה את הסאם

@@ -11,11 +11,6 @@ function scratch(name) {
 }
 </script>
 
-#!markdown
-
-זה אומר את התוצאה 30---
-הסבר בקצרה מה קוד הבא עושה
-
 #!html
 
 <script>scratch('q-01')</script>
@@ -27,8 +22,7 @@ say ((n1) + (n2))
 
 #!markdown
 
-אומר  10---
-הסבר בקצרה מה קוד הבא עושה
+זה אומר את התוצאה 30
 
 #!html
 
@@ -41,6 +35,10 @@ say (((6) * ((n1) - (n2))) / (3))
 
 #!markdown
 
+2זה מחשב את התוצאה
+
+#!markdown
+
 ---
 הסבר בקצרה מה קוד הבא עושה
 
@@ -48,19 +46,20 @@ say (((6) * ((n1) - (n2))) / (3))
 
 <script>scratch('q-03')</script>
 <pre class="q-03">
-forever         //תמיד
+forever         //תמיד 
+    if < touching (mouse pointer v)? > then             //   אם העכבר נוגע ב.דמות..
+        set [x v] to (pick random (-200) to (200))      // זה בוחר מספר רנדומלי לאיקס
+        set [y v] to (pick random (-200) to (200))  זה בוחר מספר רנדומלי ל ווי 
 
-    if < touching (mouse pointer v)? > then             אם העכבר נוגע ב...
-        set [x v] to (pick random (-200) to (200))      // הסבר
-        set [y v] to (pick random (-200) to (200))
-        glide (0.2) secs to x: (x) y: (y)           // הסבר
+        glide (0.2) secs to x: (x) y: (y)           /הדמות גולשת למקום שרשמו לאיקס וווי
+
     end
 end
 </pre>
 
 #!markdown
 
----
+זה אם העכבר נוגע זה מעביר בגלישה למיקום של איקס ו ווי---
 הסבר בקצרה מה קוד הבא עושה
 
 #!html
@@ -112,3 +111,7 @@ set [n12 v] to (answer)             // עוד פעם answer?
 Secret (n1) by (n2)
 say (result)
 </pre>
+
+#!markdown
+
+זה אומר את התשובות
