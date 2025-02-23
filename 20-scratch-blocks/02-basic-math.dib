@@ -74,7 +74,7 @@ forever                     // לעשות תמיד
     if < touching (edge v)? > then                     
     if < touching (edge v)? > then                    
         if < (x position) < (-200) > then               //  בודק איפה הדמות נמצאת ברוחב
-            set [dx v] to (pick random (2) to (5))      // הסבר
+            set [dx v] to (pick random (2) to (5))      //בוחר מספר 2-5
         end
         if < (x position) > (200) > then
             set [dx v] to (pick random (-5) to (-2))
