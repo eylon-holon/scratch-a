@@ -48,7 +48,7 @@ say (((6) * ((n1) - (n2))) / (3))
 
 <script>scratch('q-03')</script>
 <pre class="q-03">
-forever         //  
+forever         //  חםןחםןחםן
     if < touching (mouse pointer v)? > then             // הסבר
         set [x v] to (pick random (-200) to (200))      // הסבר
         set [y v] to (pick random (-200) to (200))
