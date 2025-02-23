@@ -28,7 +28,7 @@ say ((n1) + (n2))
 #!markdown
 
 ---
-הסבר בקצרה מה קוד הבא עושה
+זה אומר את התוצאה 30
 
 #!html
 
@@ -41,18 +41,17 @@ say (((6) * ((n1) - (n2))) / (3))
 
 #!markdown
 
----
-הסבר בקצרה מה קוד הבא עושה
+זה אומר את התוצאה 2
 
 #!html
 
 <script>scratch('q-03')</script>
 <pre class="q-03">
-forever         // הסבר
-    if < touching (mouse pointer v)? > then             // הסבר
-        set [x v] to (pick random (-200) to (200))      // הסבר
-        set [y v] to (pick random (-200) to (200))
-        glide (0.2) secs to x: (x) y: (y)           // הסבר
+forever         //תמיד
+    if < touching (mouse pointer v)? > then             // אם העכבר נוגע בדמות
+        set [x v] to (pick random (-200) to (200))      // זה בוחר מספר רנדומלי לאיקס
+        set [y v] to (pick random (-200) to (200))                             y זה בוחר מספר רנדומלי ל 
+        glide (0.2) secs to x: (x) y: (y)           // y הדמות גולשת למקום שרשמו לאיקס ו 
     end
 end
 </pre>
