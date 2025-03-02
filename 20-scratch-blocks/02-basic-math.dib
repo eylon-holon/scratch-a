@@ -28,7 +28,7 @@ say ((n1) + (n2))
 #!markdown
 
 ---
-הסבר בקצרה מה קוד הבא עושה
+זה אומר את התוצה של התרגיל
 
 #!html
 
@@ -41,14 +41,11 @@ say (((6) * ((n1) - (n2))) / (3))
 
 #!markdown
 
----
-הסבר בקצרה מה קוד הבא עושה
+השובה 2---
+זה פוטר את התרגיל ונותן את 
 
 #!html
 
-<script>scratch('q-03')</script>
-<pre class="q-03">
-forever         //  חםןחםןחםן
     if < touching (mouse pointer v)? > then             // הסבר
         set [x v] to (pick random (-200) to (200))      // הסבר
         set [y v] to (pick random (-200) to (200))
@@ -66,7 +63,7 @@ end
 
 <script>scratch('q-04')</script>
 <pre class="q-04">
-set [dx v] to (pick random (-5) to (5))     // הסבר
+set [dx v] to (pick random (-5) to (5))     //  זה משנה את המספרים ומזיז את  הדמות
 set [dy v] to (pick random (-5) to (5))
 go to x: (0) y: (0)     // הסבר
 forever                     // הסבר
