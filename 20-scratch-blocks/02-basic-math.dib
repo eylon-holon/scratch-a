@@ -45,33 +45,32 @@ say (((6) * ((n1) - (n2))) / (3))
 
 <script>scratch('q-03')</script>
 <pre class="q-03">
-forever         // הסבר
-    if < touching (mouse pointer v)? > then             // הסבר
-        set [x v] to (pick random (-200) to (200))      // הסבר
+forever         // לנצח
+    if < touching (mouse pointer v)? > then             // אם העכבר נוגע בדמות
+        set [x v] to (pick random (-200) to (200))      // זה בוחר מספר רנדומלי לאיקס
         set [y v] to (pick random (-200) to (200))
-        glide (0.2) secs to x: (x) y: (y)           // הסבר
+        glide (0.2) secs to x: (x) y: (y)           // מזיז את הדמות 
     end
 end
 </pre>
 
 #!markdown
 
----
-הסבר בקצרה מה קוד הבא עושה
+הדמות זזה בתוך הריבוע לפי  איפה שהיא הייתה בהתחלה וגם משנה את המהירות באמצע
 
 #!html
 
 <script>scratch('q-04')</script>
 <pre class="q-04">
-set [dx v] to (pick random (-5) to (5))     // הסבר
+set [dx v] to (pick random (-5) to (5))     // משנה את המספרים למעלה מ5 עד -5
 set [dy v] to (pick random (-5) to (5))
-go to x: (0) y: (0)     // הסבר
-forever                     // הסבר
-    change x by (dx)        // הסבר
+go to x: (0) y: (0)     // שולח את הדמות לאמצע
+forever                     // לתמיד
+    change x by (dx)        // מעלה את הדמות למעלה
     change y by (dy)
-    if < touching (edge v)? > then                      // הסבר
-        if < (x position) < (-200) > then               // הסבר
-            set [dx v] to (pick random (2) to (5))      // הסבר
+    if < touching (edge v)? > then                      //  הדמות נוגעת בקירות
+        if < (x position) < (-200) > then               // הדמות נוגעת בקיר הכי שמאלי 
+            set [dx v] to (pick random (2) to (5))      //במספר dxמשנה את ה
         end
         if < (x position) > (200) > then
             set [dx v] to (pick random (-5) to (-2))
@@ -79,8 +78,8 @@ forever                     // הסבר
         if < (y position) < (-150) > then
             set [dy v] to (pick random (2) to (5))
         end
-        if < (y position) > (150) > then                // הסבר
-            set [dy v] to (pick random (-5) to (-2))    // הסבר
+        if < (y position) > (150) > then                // הדמות נוגעת בקיר למעלה
+            set [dy v] to (pick random (-5) to (-2))    // משנה את המספר ב dy
         end
     end
 end
@@ -95,16 +94,16 @@ end
 
 <script>scratch('q-05')</script>
 <pre class="q-05">
-define Secret ((n1)) by ((n2))      // ?מה שם האמיתי של לבנה
-set [result v] to [0]           // ?למה צריך לאפס
+define Secret ((n1)) by ((n2))      // multiply
+set [result v] to [0]           //כי צריך להתחיל מאפס ואם לא אז התשובה לא תהיה נכונה
 repeat ((n1))
     change [result v] by ((n2))
 end
 
 ask [Enter number one] and wait
-set [n1 v] to (answer)              // מה זה answer?
+set [n1 v] to (answer)              // מספר 1 
 ask [Enter number two] and wait
-set [n12 v] to (answer)             // עוד פעם answer?
+set [n12 v] to (answer)             // מספר 2
 Secret (n1) by (n2)
 say (result)
 </pre>
