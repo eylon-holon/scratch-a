@@ -16,6 +16,8 @@ function scratch(name) {
 ---
 הסבר בקצרה מה קוד הבא עושה
 
+הקוד משנה את נ1 ל10 ונ2 ל20 ואז אומר "נ1 + נ2"
+
 #!html
 
 <script>scratch('q-01')</script>
@@ -29,6 +31,8 @@ say ((n1) + (n2))
 
 ---
 הסבר בקצרה מה קוד הבא עושה
+
+הקוד משנה את נ1 ל2 ונ2 ל1 ואז אומר 6 כפול נ1 פחות נ2 לחלק ל3
 
 #!html
 
@@ -48,11 +52,11 @@ say (((6) * ((n1) - (n2))) / (3))
 
 <script>scratch('q-03')</script>
 <pre class="q-03">
-forever         // הסבר
-    if < touching (mouse pointer v)? > then             // הסבר
-        set [x v] to (pick random (-200) to (200))      // הסבר
+forever         // הקוד ממשיך לתמיד
+    if < touching (mouse pointer v)? > then             // אם הדמות נוגעת בעכבר
+        set [x v] to (pick random (-200) to (200))      // בוחר X ו Y רנדומלי
         set [y v] to (pick random (-200) to (200))
-        glide (0.2) secs to x: (x) y: (y)           // הסבר
+        glide (0.2) secs to x: (x) y: (y)           // מזיז את הדמות לקורדינציות שנבחרו
     end
 end
 </pre>
@@ -66,15 +70,15 @@ end
 
 <script>scratch('q-04')</script>
 <pre class="q-04">
-set [dx v] to (pick random (-5) to (5))     // הסבר
+set [dx v] to (pick random (-5) to (5))     // משנה את DX וDY למספר רנדומלי מ-5 עד 5
 set [dy v] to (pick random (-5) to (5))
-go to x: (0) y: (0)     // הסבר
-forever                     // הסבר
-    change x by (dx)        // הסבר
+go to x: (0) y: (0)     // משגר את הדמות לאמצע המסך
+forever                     // הקוד ממשיך לתמיד
+    change x by (dx)        // משנה את אקס בדי-אקס
     change y by (dy)
-    if < touching (edge v)? > then                      // הסבר
-        if < (x position) < (-200) > then               // הסבר
-            set [dx v] to (pick random (2) to (5))      // הסבר
+    if < touching (edge v)? > then                      // אם הדמות נוגעת בקצה המסך אז
+        if < (x position) < (-200) > then               // אם אקס הוא קטן ממינוס 200 אז
+            set [dx v] to (pick random (2) to (5))      // תשנה את די-אקס למספר רנדומלי בין 2 ל5
         end
         if < (x position) > (200) > then
             set [dx v] to (pick random (-5) to (-2))
@@ -82,8 +86,8 @@ forever                     // הסבר
         if < (y position) < (-150) > then
             set [dy v] to (pick random (2) to (5))
         end
-        if < (y position) > (150) > then                // הסבר
-            set [dy v] to (pick random (-5) to (-2))    // הסבר
+        if < (y position) > (150) > then                // אם Y גדול מ150 אז
+            set [dy v] to (pick random (-5) to (-2))    // תשנה את DY למספר רנדומלי בין -5 ל-2
         end
     end
 end
@@ -99,15 +103,15 @@ end
 <script>scratch('q-05')</script>
 <pre class="q-05">
 define Secret ((n1)) by ((n2))      // ?מה שם האמיתי של לבנה
-set [result v] to [0]           // ?למה צריך לאפס
+set [result v] to [0]           //   כדי שיהיה אפשר להתשמש בקוד עוד פעמים ?למה צריך לאפס
 repeat ((n1))
     change [result v] by ((n2))
 end
 
 ask [Enter number one] and wait
-set [n1 v] to (answer)              // מה זה answer?
+set [n1 v] to (answer)              // מה זה answer? מספר אחד
 ask [Enter number two] and wait
-set [n12 v] to (answer)             // עוד פעם answer?
+set [n12 v] to (answer)             // עוד פעם answer? מספר שתיים
 Secret (n1) by (n2)
 say (result)
 </pre>
