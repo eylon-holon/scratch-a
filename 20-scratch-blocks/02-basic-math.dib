@@ -49,7 +49,7 @@ say (((6) * ((n1) - (n2))) / (3))
 <pre class="q-03">
 forever         // זה עושה את הפקודה לנצח
     if < touching (mouse pointer v)? > then             // עם העכבר נוגע בשחקן אז
-        set [x v] to (pick random (-200) to (200))      //תבחר מספר רנדמלי בין 
+        set [x v] to (pick random (-200) to (200))      //   -200 200 תבחר רנדמלי בין 
         set [y v] to (pick random (-200) to (200))
         glide (0.2) secs to x: (x) y: (y)           // תגלשו ב 0.2 שניות להמצא של המסך
     end
@@ -69,20 +69,21 @@ set [dx v] to (pick random (-5) to (5))     // זה כותב מספר בין -5 
 set [dy v] to (pick random (-5) to (5))
 go to x: (0) y: (0)     // זה שולח להמצא של המסך
 forever                     // זה עושה את הפקודה לנצח
-    change x by (dx)        //   זה מזיז את השחקן  5צעדים
+    change x by (dx)        //  dx ל x זה משנה את ה 
     change y by (dy)
-    if < touching (edge v)? >                       // הסבר
-        if < (x position) < (-200) > then               // הסבר
-            set [dx v] to (pick random (2) to (5))      // הסבר
-        end
+    if < touching (edge v)? >                       //   אם השחקן נוגע בפינה אז
+    
+        if < (x position) < (-200) > then               // זה מביא את השחק לצד שמואל 
+    
+            set [dx v] to (pick random (2) to (5))      //   dx תהיה בין 2 ל 5 זה עושה שכמות של 
         if < (x position) > (200) > then
             set [dx v] to (pick random (-5) to (-2))
         end
         if < (y position) < (-150) > then
             set [dy v] to (pick random (2) to (5))
         end
-        if < (y position) > (150) > then                // הסבר
-            set [dy v] to (pick random (-5) to (-2))    // הסבר
+        if < (y position) > (150) > then                // זה מעלה את השחקן למעלה
+            set [dy v] to (pick random (-5) to (-2))    // זה עושה ש ה dy הופך למספר רנדומלי ביו -2 ל-5 
         end
     end
 end
@@ -97,16 +98,16 @@ end
 
 <script>scratch('q-05')</script>
 <pre class="q-05">
-define Secret ((n1)) by ((n2))      // ?מה שם האמיתי של לבנה
-set [result v] to [0]           // ?למה צריך לאפס
+define Secret ((n1)) by ((n2))      // multiply
+set [result v] to [0]           // אם בתצואה לא היה אפס לא היה אפשר לחשב
 repeat ((n1))
     change [result v] by ((n2))
 end
 
 ask [Enter number one] and wait
-set [n1 v] to (answer)              // מה זה answer?
+set [n1 v] to (answer)              // מספר 1
 ask [Enter number two] and wait
-set [n12 v] to (answer)             // עוד פעם answer?
+set [n12 v] to (answer)             // מספר 2
 Secret (n1) by (n2)
 say (result)
 </pre>
