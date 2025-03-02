@@ -97,8 +97,8 @@ end
 
 <script>scratch('q-05')</script>
 <pre class="q-05">
-define Secret ((n1)) by ((n2))      // ?מה שם האמיתי של לבנה
-set [result v] to [0]           // ?למה צריך לאפס
+define Secret ((n1)) by ((n2))      //כפל
+set [result v] to [0]           // כי זה חייב להתחיל מאפס
 repeat ((n1))
     change [result v] by ((n2))
 end
