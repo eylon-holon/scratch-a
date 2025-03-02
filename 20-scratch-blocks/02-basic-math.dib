@@ -35,7 +35,7 @@ say (((6) * ((n1) - (n2))) / (3))
 
 #!markdown
 
-2זה מחשב את התוצאה
+2 זה מחשב את התוצאה
 
 #!markdown
 
@@ -48,10 +48,10 @@ say (((6) * ((n1) - (n2))) / (3))
 <pre class="q-03">
 forever         //תמיד 
     if < touching (mouse pointer v)? > then             //   אם העכבר נוגע ב.דמות..
-        set [x v] to (pick random (-200) to (200))      // זה בוחר מספר רנדומלי לאיקס
-        set [y v] to (pick random (-200) to (200))  זה בוחר מספר רנדומלי ל ווי 
+        set [x v] to (pick random (-200) to (200))      //ב זה בוחר מספר רנדומלי לאיקס
+        set [y v] to (pick random (-200) to (200))   //זה בוחר מספר רנדומלי ל ווי 
 
-        glide (0.2) secs to x: (x) y: (y)           /הדמות גולשת למקום שרשמו לאיקס וווי
+        glide (0.2) secs to x: (x) y: (y)          //הדמות גולשת למקום שרשמו לאיקס וווי
 
     end
 end
@@ -66,15 +66,15 @@ end
 
 <script>scratch('q-04')</script>
 <pre class="q-04">
-set [dx v] to (pick random (-5) to (5))     // הסבר
+set [dx v] to (pick random (-5) to (5))     // זה משנה את המספרים ומזיז את הדמות למעלה ולמטה
 set [dy v] to (pick random (-5) to (5))
-go to x: (0) y: (0)     // הסבר
-forever                     // הסבר
-    change x by (dx)        // הסבר
+go to x: (0) y: (0)     // שם את הדמות באמצע
+forever                     /לתמיד
+    change x by (dx)        // זה מעלה את הדמות תמעלה ולמטה
     change y by (dy)
-    if < touching (edge v)? > then                      // הסבר
-        if < (x position) < (-200) > then               // הסבר
-            set [dx v] to (pick random (2) to (5))      // הסבר
+    if < touching (edge v)? > then                      // זה מביא את הדמות לפינה
+        if < (x position) < (-200) > then               //אם המיקום של איקס -200 אז
+            set [dx v] to (pick random (2) to (5))      // הוא שם את dx למספר רנדומלי בין שתיים לחמש
         end
         if < (x position) > (200) > then
             set [dx v] to (pick random (-5) to (-2))
@@ -82,12 +82,16 @@ forever                     // הסבר
         if < (y position) < (-150) > then
             set [dy v] to (pick random (2) to (5))
         end
-        if < (y position) > (150) > then                // הסבר
-            set [dy v] to (pick random (-5) to (-2))    // הסבר
+        if < (y position) > (150) > then                // הדמות תפגע בקיר למעלה
+            set [dy v] to (pick random (-5) to (-2))    // הוא שם את dyלמספר רנדומלי בין -5 ל-2
         end
     end
 end
 </pre>
+
+#!markdown
+
+הדמות זהזה בתוך הריבוע לפי איפה שהיא הייתה בהתחלה וגם משנה את המהירות באמצע
 
 #!markdown
 
@@ -98,16 +102,16 @@ end
 
 <script>scratch('q-05')</script>
 <pre class="q-05">
-define Secret ((n1)) by ((n2))      // ?מה שם האמיתי של לבנה
-set [result v] to [0]           // ?למה צריך לאפס
+define Secret ((n1)) by ((n2))      // multiply
+set [result v] to [0]           // יכי צריך להתחיל מאפס ואם לא התשובה לא תיהיה נכוה
 repeat ((n1))
     change [result v] by ((n2))
 end
 
 ask [Enter number one] and wait
-set [n1 v] to (answer)              // מה זה answer?
+set [n1 v] to (answer)              //תשובה
 ask [Enter number two] and wait
-set [n12 v] to (answer)             // עוד פעם answer?
+set [n12 v] to (answer)             // תשובה
 Secret (n1) by (n2)
 say (result)
 </pre>
