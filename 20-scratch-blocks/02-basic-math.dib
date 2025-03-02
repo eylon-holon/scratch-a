@@ -41,12 +41,11 @@ say (((6) * ((n1) - (n2))) / (3))
 
 <script>scratch('q-03')</script>
 <pre class="q-03">
-forever      // חהפעולה תימשך לנצ
-    if < touching (mouse pointer v)? > then        // אם המסך נוגע 
-        set [x v] to (pick random (-200) to (200))      // הסבר
-        set [y v] to (pick random (-200) to (200))
-        glide (0.2) secs to x: (x) y: (y)           // הסבר
-    end
+forever      //  הקוד יוצר לולאה אינסופית ("forever")
+    if < touching (mouse pointer v)? > then        // אם סמן העכבר נוגע בדמות, הקוד עושה את הפעולות הבאות:
+        set [x v] to (pick random (-200) to (200))      //     הערכים האקראיים נבחרים בטווח של -200 עד 200. x בוחר מיקום אקראי: הקוד בוחר ערך אקראי עבור 
+        set [y v] to (pick random (-200) to (200))  // הערכים האקראיים נבחרים בטווח של -200 עד 200. y  בוחר מיקום אקראי: הקוד בוחר ערך אקראי עבור 
+        glide (0.2) secs to x: (x) y: (y)           // y לנקודה  x הפקודה גורמת לדמות לדאות במשך 0.2 שניות מנקודה  "glide" 
 end
 </pre>
 
@@ -59,7 +58,7 @@ end
 
 <script>scratch('q-04')</script>
 <pre class="q-04">
-set [dx v] to (pick random (-5) to (5))     // הסבר
+set [dx v] to (pick random (-5) to (5))     // dx מערכת 
 set [dy v] to (pick random (-5) to (5))
 go to x: (0) y: (0)     // הסבר
 forever                     // הסבר
