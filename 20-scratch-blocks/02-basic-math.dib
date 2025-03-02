@@ -46,19 +46,14 @@ say (((6) * ((n1) - (n2))) / (3))
 
 <script>scratch('q-03')</script>
 <pre class="q-03">
-forever         // הסבר
-    if < touching (mouse pointer v)? > then             // הסבר
-        set [x v] to (pick random (-200) to (200))      // הסבר
-        set [y v] to (pick random (-200) to (200))
-        glide (0.2) secs to x: (x) y: (y)           // הסבר
+forever   //הפעולה תימשך לנצח 
+    if < touching (mouse pointer v)? > then             // אם העכבר נוגע במסך אז
+        set [x v] to (pick random (-200) to (200))      //  מערכת איקס  בוחרת מספר אקראי מ-200- עד 200 
+        set [y v] to (pick random (-200) to (200)) // בוחרת מספר אקראי מ-200- עד 200 y מערכת 
+        glide (0.2) secs to x: (x) y: (y)           //  y הדמות דואה במשך 0.2 שניות מנקודה איקס לנקודה 
     end
 end
 </pre>
-
-#!markdown
-
----
-הסבר בקצרה מה קוד הבא עושה
 
 #!html
 
