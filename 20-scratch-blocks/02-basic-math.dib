@@ -67,11 +67,11 @@ end
 <pre class="q-04">
 set [dx v] to (pick random (-5) to (5))     //   זה משנה את המספריםלמעלה מחמש עד מינוס חמש
 set [dy v] to (pick random (-5) to (5))
-go to x: (0) y: (0)     // הדמות באמצע
+go to x: (0) y: (0)     // שולח את הדמות באמצע
 forever                     // לתמיד
-    change x by (dx)        // זה מעלה את הדמות ללמעלה
+    change x by (dx)        // זה שולט על המהירות של הדמות
     change y by (dy)
-    if < touching (edge v)? > then                      //זה מביא את הדמות לפינה
+    if < touching (edge v)? > then                      //זה פוגע בקירות
         if < (x position) < (-200) > then               //אם המיקום של איקס -200 אז
             set [dx v] to (pick random (2) to (5))      // הוא שם את dxלמספר רנדומלי בין שתיים לחמש
         end
@@ -97,16 +97,16 @@ end
 
 <script>scratch('q-05')</script>
 <pre class="q-05">
-define Secret ((n1)) by ((n2))      // ?מה שם האמיתי של לבנה
-set [result v] to [0]           // ?למה צריך לאפס
+define Secret ((n1)) by ((n2))      // multiely
+set [result v] to [0]           //  כי צריך הלהתחיל מאפס ואם לא אז התשובה לא תהיה נכונה
 repeat ((n1))
     change [result v] by ((n2))
 end
 
 ask [Enter number one] and wait
-set [n1 v] to (answer)              // מה זה answer?
+set [n1 v] to (answer)              //תשובה
 ask [Enter number two] and wait
-set [n12 v] to (answer)             // עוד פעם answer?
-Secret (n1) by (n2)
+set [n12 v] to (answer)             // תשובה
+Secret (n1) by (n2
 say (result)
 </pre>
