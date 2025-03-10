@@ -100,9 +100,9 @@ repeat ((n1))
 end
 
 ask [Enter number one] and wait
-set [n1 v] to (answer)              // מה זה answer?
+set [n1 v] to (answer)              // המספר שהגדרת כ-אן אחד אז זה יהיה התשובה
 ask [Enter number two] and wait
-set [n2 v] to (answer)             // עוד פעם answer?
+set [n2 v] to (answer)             // המספר שהגדרת כ-אן שתיים זה יהיה התשובה כפול אן אחד
 Secret (n1) by (n2)
 say (result)
 </pre>
