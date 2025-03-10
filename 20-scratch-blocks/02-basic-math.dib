@@ -51,22 +51,21 @@ end
 
 #!markdown
 
----
-הסבר בקצרה מה קוד הבא עושה
+הדמות הולכת אחרי עכבר המחשב
 
 #!html
 
 <script>scratch('q-04')</script>
 <pre class="q-04">
-set [dx v] to (pick random (-5) to (5))     // dx מערכת 
+set [dx v] to (pick random (-5) to (5))     //   5 בוחרת מספר אקראי מ 5- עד dx  מערכת  
 set [dy v] to (pick random (-5) to (5))
-go to x: (0) y: (0)     // הסבר
-forever                     // הסבר
-    change x by (dx)        // הסבר
+go to x: (0) y: (0)     // הדמות הולכת לאמצע
+forever                     // הפעולה תימשך לנצח
+    change x by (dx)        // הדמות משננה את מיקומה וזזה כל פעם צעד אחד ימינה
     change y by (dy)
-    if < touching (edge v)? > then                      // הסבר
-        if < (x position) < (-200) > then               // הסבר
-            set [dx v] to (pick random (2) to (5))      // הסבר
+    if < touching (edge v)? > then                      // אם הדמות נוגעת בקצה אז
+        if < (x position) < (-200) > then               // אם ציר איקס קטן מ-200- אז
+            set [dx v] to (pick random (2) to (5))      //  5 בוחרת מספר אקראי מ 2 עד dx  מערכת  
         end
         if < (x position) > (200) > then
             set [dx v] to (pick random (-5) to (-2))
@@ -74,8 +73,8 @@ forever                     // הסבר
         if < (y position) < (-150) > then
             set [dy v] to (pick random (2) to (5))
         end
-        if < (y position) > (150) > then                // הסבר
-            set [dy v] to (pick random (-5) to (-2))    // הסבר
+        if < (y position) > (150) > then                // גדול  מ 150 אז y אם ציר 
+            set [dy v] to (pick random (-5) to (-2))    //  -2 בוחרת מספר אקראי מ 5- עד  dx מערכת 
         end
     end
 end
