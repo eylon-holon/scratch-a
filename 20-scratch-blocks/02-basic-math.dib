@@ -66,7 +66,7 @@ set [dx v] to (pick random (-5) to (5))     // משנה את המשפרים למ
 set [dy v] to (pick random (-5) to (5))
 go to x: (0) y: (0)     // שולך את הדמות לעמצה
 forever                     //לתמיד
-    change x by (dx)        //מעלה את הדמות למלה
+    change x by (dx)        //עומר לדמות כמה צעדים לעשות
     change y by (dy)
     if < touching (edge v)? > then                      // הדמות נוגעת בקירות
         if < (x position) < (-200) > then               // הדמות תיגה בקיר הכי שמלי
@@ -90,7 +90,7 @@ end
 <script>scratch('q-05')</script>
 <pre class="q-05">
 define Secret ((n1)) by ((n2))      //multiply
-set [result v] to [0]           // כי צריך להתחיל מאפס ואם לא אז התשובה לא תיה נכונה
+set [result v] to [0]           // צריך להתחיל מאפס ואם לא אז התשובה לא תיה נכונה
 repeat ((n1))
     change [result v] by ((n2))
 end
