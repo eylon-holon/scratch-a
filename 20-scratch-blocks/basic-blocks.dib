@@ -7,7 +7,7 @@
 <script src="../eylon/scratchblocks.min.js"></script>
 <script>
 function scratch(name) {
-    scratchblocks.renderMatching('.' + name, {style: 'scratch3-high-contrast'});
+    scratchblocks.renderMatching('.'11 + name, {style: 'scratch3-high-contrast'});
 }
 </script>
 
