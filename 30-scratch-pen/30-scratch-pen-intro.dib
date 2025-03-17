@@ -28,7 +28,7 @@ end
 
 #!markdown
 
-... זה
+זה עושה שכול המסך היה מלא בשחקנים צבעונים
 
 #!markdown
 
@@ -55,7 +55,7 @@ end
 
 #!markdown
 
-מה זה עושה בקצרה  
+זה עושה שהשחקן זז בעיגול מושלם
 
 #!markdown
 
@@ -65,17 +65,17 @@ end
 
 <script>scratch('q-02')</script>
 <pre class="q-02">
-erase all           // ... זה
+erase all           // ... זה מוחק את הכול העטים במסך
 
-stamp               // ... זה
+stamp               // ... זה משעיר את השחקן קפוא במקום
 
-pen down            // ... זה
+pen down            // ... זה מחוון את העט למטה 
 
-pen up              // ... זה
+pen up              // ...  זה מחוון את העט למעלה 
 
-set pen color to (#ff0000)    // ... זה
+set pen color to (#ff0000)    // ... זה בוחר צבע לעט
 
-set pen size to (10)          // ... זה
+set pen size to (10)          // ... זה בוחר את הגודל לעט
 </pre>
 
 #!markdown
