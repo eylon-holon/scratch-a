@@ -28,7 +28,7 @@ end
 
 #!markdown
 
-... זה
+.זה משכפל את הדמות מלא פעמים בכל מיני צבעים שונים וזה שם אותם בכיוונים שונים בין טווח מספרים שונים שאומרים להם
 
 #!markdown
 
@@ -55,7 +55,7 @@ end
 
 #!markdown
 
-מה זה עושה בקצרה  
+הדמות מסתובבת באיטיות משכפלת את עצמה ויוצרת עיגול לפי ה איקס וה ווי 
 
 #!markdown
 
@@ -65,17 +65,18 @@ end
 
 <script>scratch('q-02')</script>
 <pre class="q-02">
-erase all           // ... זה
+erase all           // זה מנקה את כל הדברים ומשאיר רק דמות אחת
 
-stamp               // ... זה
+stamp               // .לחתום
 
-pen down            // ... זה
+pen down            // מכוון את העט לטה
 
-pen up              // ... זה
 
-set pen color to (#ff0000)    // ... זה
+pen up              //מכוון את העט למעל
 
-set pen size to (10)          // ... זה
+set pen color to (#ff0000)    //זה קובע את צבע העט
+
+set pen size to (10)          // זה משנה את גודל העט ל 10
 </pre>
 
 #!markdown
