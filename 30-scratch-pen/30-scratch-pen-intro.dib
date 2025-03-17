@@ -28,7 +28,7 @@ end
 
 #!markdown
 
-... זה
+זה שם מלא חתולים בצבעים שונים על המסך
 
 #!markdown
 
@@ -55,7 +55,7 @@ end
 
 #!markdown
 
-מה זה עושה בקצרה  
+הוא מסתובב בצורת עיגול 
 
 #!markdown
 
@@ -65,17 +65,17 @@ end
 
 <script>scratch('q-02')</script>
 <pre class="q-02">
-erase all           // ... זה
+erase all           // מוחק בכל
 
-stamp               // ... זה
+stamp               // זה עושה קו לאן שהדמות הולכת
 
-pen down            // ... זה
+pen down            // הפסק פעולה
 
-pen up              // ... זה
+pen up              // התחל פעולה
 
-set pen color to (#ff0000)    // ... זה
+set pen color to (#ff0000)    // זה משנה את הצבע של הקו שהעט מצייר
 
-set pen size to (10)          // ... זה
+set pen size to (10)          // משנה את כודל הקו שהעט מצייר
 </pre>
 
 #!markdown
@@ -92,19 +92,19 @@ set pen size to (10)          // ... זה
 
 #!markdown
 
-![](img/turtle-q02.png)
+![](img/turtle-q02.png) ![alt text](image-1.png) ![alt text](image-2.png) ![alt text](image-3.png) ![alt text](image-4.png) ![alt text](image-5.png)
 
 #!markdown
 
-![](img/turtle-q01.png)
+![](img/turtle-q01.png) ![alt text](image-7.png)
 
 #!markdown
 
-![](img/turtle-q04.png)
+![](img/turtle-q04.png) ![alt text](image-8.png)
 
 #!markdown
 
-![](img/turtle-q03.png)
+![](img/turtle-q03.png) ![alt text](image-9.png)
 
 #!markdown
 
@@ -112,4 +112,4 @@ set pen size to (10)          // ... זה
 
 #!markdown
 
-### ציירו עוד משהוא ושמרו בסביבת עבודה
+מחומש![alt text](image-10.png) ### ציירו עוד משהוא ושמרו בסביבת עבודה
