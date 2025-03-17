@@ -28,7 +28,7 @@ end
 
 #!markdown
 
-... זה
+ זה מתחיל למלא את כל המסך בדמות שיש בצבעים שונים
 
 #!markdown
 
@@ -55,7 +55,7 @@ end
 
 #!markdown
 
-מה זה עושה בקצרה  
+הוא הולך במעגל ומצייר עיגול 
 
 #!markdown
 
@@ -65,17 +65,17 @@ end
 
 <script>scratch('q-02')</script>
 <pre class="q-02">
-erase all           // ... זה
+erase all           // מוחק הכל
 
-stamp               // ... זה
+stamp               // 
 
-pen down            // ... זה
+pen down            // לעצור/להניח את העט
 
-pen up              // ... זה
+pen up              // להחזיר את עט
 
-set pen color to (#ff0000)    // ... זה
+set pen color to (#ff0000)    // לשנות צבע לעט
 
-set pen size to (10)          // ... זה
+set pen size to (10)          // גודל הכתב
 </pre>
 
 #!markdown
