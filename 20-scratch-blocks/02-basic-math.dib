@@ -51,7 +51,7 @@ end
 
 #!markdown
 
-הדמות הולכת אחרי עכבר המחשב
+הדמות בורחת  מעכבר המחשב
 
 #!html
 
@@ -82,15 +82,14 @@ end
 
 #!markdown
 
----
-הסבר בקצרה מה קוד הבא עושה
+הדמות זזה לכיוונים שונים וצדדים שונים לנצח
 
 #!html
 
 <script>scratch('q-05')</script>
 <pre class="q-05">
-define Secret ((n1)) by ((n2))      // ?מה שם האמיתי של לבנה
-set [result v] to [0]           // ?למה צריך לאפס
+define Secret ((n1)) by ((n2))      // כפל
+set [result v] to [0]           // אם לא נאפס התוצאה (המכפלה) לא תהיה נכונה
 repeat ((n1))
     change [result v] by ((n2))
 end
@@ -98,7 +97,7 @@ end
 ask [Enter number one] and wait
 set [n1 v] to (answer)              // מה זה answer?
 ask [Enter number two] and wait
-set [n12 v] to (answer)             // עוד פעם answer?
+set [n2 v] to (answer)             // עוד פעם answer?
 Secret (n1) by (n2)
 say (result)
 </pre>
