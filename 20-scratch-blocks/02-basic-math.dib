@@ -57,20 +57,19 @@ end
 
 #!markdown
 
----
-הסבר בקצרה מה קוד הבא עושה
+הדמות תברח מהעכבר של המחשב
 
 #!html
 
 <script>scratch('q-04')</script>
 <pre class="q-04">
-set [dx v] to (pick random (-5) to (5))     // הסבר
+set [dx v] to (pick random (-5) to (5))     //בוחרת מספר אקראי מ-5 ל5 dx מערכת 
 set [dy v] to (pick random (-5) to (5))
-go to x: (0) y: (0)     // הסבר
-forever                     // הסבר
-    change x by (dx)        // הסבר
+go to x: (0) y: (0)     // x:(0) y:(0) עבור אל 
+forever                     // לנצח
+    change x by (dx)        //(dx)ב y שנה שינוי  (dx)ב x שנה שינוי 
     change y by (dy)
-    if < touching (edge v)? > then                      // הסבר
+    if < touching (edge v)? > then                      // אם הדמות נוגעת בקצה אז
         if < (x position) < (-200) > then               // הסבר
             set [dx v] to (pick random (2) to (5))      // הסבר
         end
@@ -86,11 +85,6 @@ forever                     // הסבר
     end
 end
 </pre>
-
-#!markdown
-
----
-הסבר בקצרה מה קוד הבא עושה
 
 #!html
 
