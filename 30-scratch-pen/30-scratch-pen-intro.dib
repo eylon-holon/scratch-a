@@ -1,0 +1,115 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":"csharp","items":[{"aliases":[],"name":"csharp"}]}}
+
+#!html
+
+<script src="../eylon/scratchblocks.min.js"></script>
+<script>
+function scratch(name) {
+    scratchblocks.renderMatching('.' + name, {style: 'scratch3-high-contrast'});
+}
+</script>
+
+#!html
+
+<script>scratch('q-00')</script>
+<pre class="q-00">
+when [space v] key pressed
+pen up
+erase all
+forever
+    go to (random position v)
+    point in direction (pick random (0) to (360))
+    set [color v] effect to (pick random (0) to (500))
+    stamp
+end
+</pre>
+
+#!markdown
+
+... זה
+
+#!markdown
+
+---
+
+#!html
+
+<script>scratch('q-01')</script>
+<pre class="q-01">
+set [x v] to (pick random (-200) to (200))
+set [y v] to (pick random (-150) to (150))
+point in direction (90)
+pen up
+go to x: (x) y: (y)
+pen down
+repeat (360)
+    turn right (1) degrees
+    move (1) steps
+    if < ((direction) mod (90)) = (0) > then
+        stamp
+    end
+end
+</pre>
+
+#!markdown
+
+מה זה עושה בקצרה  
+
+#!markdown
+
+---
+
+#!html
+
+<script>scratch('q-02')</script>
+<pre class="q-02">
+erase all           // ... זה
+
+stamp               // ... זה
+
+pen down            // ... זה
+
+pen up              // ... זה
+
+set pen color to (#ff0000)    // ... זה
+
+set pen size to (10)          // ... זה
+</pre>
+
+#!markdown
+
+הסבירו כל פקודה
+
+#!markdown
+
+---
+
+#!markdown
+
+### ציירו את התמונות הבאות ושמרו בסביבת עבודה
+
+#!markdown
+
+![](img/turtle-q02.png)
+
+#!markdown
+
+![](img/turtle-q01.png)
+
+#!markdown
+
+![](img/turtle-q04.png)
+
+#!markdown
+
+![](img/turtle-q03.png)
+
+#!markdown
+
+---
+
+#!markdown
+
+### ציירו עוד משהוא ושמרו בסביבת עבודה
