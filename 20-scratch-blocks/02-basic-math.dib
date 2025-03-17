@@ -55,6 +55,10 @@ forever   //הפעולה תימשך לנצח
 end
 </pre>
 
+#!markdown
+
+הדמות בורחת מעכבר המחשב 
+
 #!html
 
 <script>scratch('q-04')</script>
@@ -82,12 +86,16 @@ forever                     // הפעולה תימשך לנצח
 end
 </pre>
 
+#!markdown
+
+הדמות זזה לכיוונים שוניםולצדדים שונים לנצח 
+
 #!html
 
 <script>scratch('q-05')</script>
 <pre class="q-05">
-define Secret ((n1)) by ((n2))      // ?מה שם האמיתי של לבנה
-set [result v] to [0]           // ?למה צריך לאפס
+define Secret ((n1)) by ((n2))      //כפל
+set [result v] to [0]           // צריך לאפס כי אם לא נאפס התוצאה (המכפלה)לא תהיה נכונה
 repeat ((n1))
     change [result v] by ((n2))
 end
