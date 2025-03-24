@@ -125,19 +125,19 @@ end
 
 | answer    | color     |
 | --------  | -------   |
-| 5         |           |
-| 7         |           |
-| 10        |           |
-| 3         |           |
+| 5         |   yello   |
+| 7         |   Orange  |
+| 10        |   Red     |
+| 3         |   green   |
 
 #!markdown
 
 | answer    | color     |
 | --------  | -------   |
-| 1-3       |           |
-| 9-10      |           |
-| 4-6       |           |
-| 7-8       |           |
+| 1-3       |   Red     |
+| 9-10      |   Green   |
+| 4-6       |   Yello   |
+| 7-8       |   Orange  |
 
 #!markdown
 
