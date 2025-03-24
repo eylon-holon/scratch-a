@@ -29,7 +29,7 @@ end
 
 #!markdown
 
-מה תגיד הדמות?  
+הדמות תגיד אמת.
 
 #!html
 
@@ -45,7 +45,7 @@ end
 
 #!markdown
 
-מה תגיד הדמות?  
+הדמות תגיד שקר.
 
 #!html
 
@@ -61,7 +61,7 @@ end
 
 #!markdown
 
-מה תגיד הדמות?  
+הדמות תגיד שקר
 
 #!html
 
@@ -77,7 +77,7 @@ end
 
 #!markdown
 
-מה תגיד הדמות?  
+הדמות תגיד שקר.
 
 #!html
 
@@ -93,7 +93,7 @@ end
 
 #!markdown
 
-מה תגיד הדמות?  
+הדמות תגיד שקר.
 
 #!markdown
 
@@ -125,19 +125,19 @@ end
 
 | answer    | color     |
 | --------  | -------   |
-| 5         |           |
-| 7         |           |
-| 10        |           |
-| 3         |           |
+| 5         |  yellow         |
+| 7         |     green      |
+| 10        |       red    |
+| 3         |     orange      |
 
 #!markdown
 
 | answer    | color     |
 | --------  | -------   |
-| 1-3       |           |
-| 9-10      |           |
-| 4-6       |           |
-| 7-8       |           |
+| 1-3       |     orange      |
+| 9-10      |       red    |
+| 4-6       |     green      |
+| 7-8       |        yellow   |
 
 #!markdown
 
@@ -167,7 +167,7 @@ say (newWord) for (2) seconds
 
 #!markdown
 
-???
+1a2w3e4s5o6m7e
 
 #!markdown
 
@@ -175,6 +175,10 @@ say (newWord) for (2) seconds
 <span style="color:green">GREAT</span>  
 הדצות תגיד  
 <span style="color:green">0G1R2E3A4T5</span>  
+
+#!markdown
+
+צריך לשנות את אן ל0
 
 #!html
 
@@ -208,7 +212,7 @@ say (newWord) for (2) seconds
 define draw ((length))
 repeat (length)
     move (length) steps
-    turn ccw (???) degrees
+    turn ccw (40) degrees
 end
 
 when flag clicked
@@ -221,7 +225,7 @@ set [num v] to (50)
 repeat (4)
     draw (num)
     turn ccw (90) degrees
-    change [??? v] by (10)
+    change [num] by (10)
 end
 </pre>
 
@@ -232,7 +236,7 @@ num?
 
 #!markdown
 
-???
+90
 
 #!html
 
@@ -254,7 +258,7 @@ end
 
 #!markdown
 
-מה תצייר הדמות
+צורה מספר 2
 
 #!markdown
 
@@ -360,7 +364,7 @@ say (number)
 
 #!markdown
 
-כמה פעמים תתבצע הלולאה?  
+20
 
 #!html
 
