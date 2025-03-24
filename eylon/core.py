@@ -150,11 +150,13 @@ def missing(lesson, people):
 ###################################
 
 def store_all_changes_to_github():
+    os_cmd("git pull")
     os_cmd("git add -A")
     os_cmd('git commit -m "auto commit..."')
     os_cmd("git push")
 
 
 def get_next_lesson():
-    os_cmd("git pull origin main --no-ff --no-edit && git push")
+    os_cmd("git merge origin/main -m next-lesson -Xours")
+    os_cmd("git push")
 
