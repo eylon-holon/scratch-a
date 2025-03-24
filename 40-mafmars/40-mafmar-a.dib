@@ -21,9 +21,9 @@ function scratch(name) {
 <pre class="q-1-a">
 set [wow v] to (5)
 if <<(wow) > (0)> and <(wow) < (13)>> then
-    say (אמת)
+    say [אמת]
 else
-    say (שקר)
+    say [שקר]
 end
 </pre>
 
@@ -37,9 +37,9 @@ end
 <pre class="q-1-b">
 set [wow v] to (11)
 if <<(wow) > (11)> or <(wow) < (11)>> then
-    say (אמת)
+    say [אמת]
 else
-    say (שקר)
+    say [שקר]
 end
 </pre>
 
@@ -53,9 +53,9 @@ end
 <pre class="q-1-c">
 set [wow v] to (9)
 if <<((wow) mod (2)) = (0)> and <((wow) mod (3)) = (0)>> then
-    say (אמת)
+    say [אמת]
 else
-    say (שקר)
+    say [שקר]
 end
 </pre>
 
@@ -69,9 +69,9 @@ end
 <pre class="q-1-d">
 set [wow v] to (10)
 if <<((wow) / (5)) > (2)> or <((3) + (wow)) = (12)>> then
-    say (אמת)
+    say [אמת]
 else
-    say (שקר)
+    say [שקר]
 end
 </pre>
 
@@ -85,9 +85,9 @@ end
 <pre class="q-1-e">
 set [wow v] to (10)
 if <<((wow) - (2)) = ((wow) / (2))> or <((2) + (wow)) > ((2) * (wow))>> then
-    say (אמת)
+    say [אמת]
 else
-    say (שקר)
+    say [שקר]
 end
 </pre>
 
@@ -108,15 +108,15 @@ ask (Enter a number between 1 to 10) and wait
 set [color v] to (answer)
 if <(color) < (7)> then
     if <(color) > (3)> then
-        say (Yellow) for (2) seconds
+        say [Yellow] for (2) seconds
     else
-        say (Green) for (2) seconds
+        say [Green] for (2) seconds
     end
 else
     if <<(color) = (9)> or <(color) = (10)>> then
-        say (Red) for (2) seconds
+        say [Red] for (2) seconds
     else
-        say (Orange) for (2) seconds
+        say [Orange] for (2) seconds
     end
 end
 </pre>
@@ -149,7 +149,7 @@ end
 <script>scratch('q-3-a')</script>
 <pre class="q-3-a">
 when flag clicked
-ask (Enter word) and wait
+ask [Enter word] and wait
 set [word v] to (answer)
 set [n v] to (1)
 set [newWord v] to (#)
@@ -207,8 +207,8 @@ say (newWord) for (2) seconds
 <script>scratch('q-4')</script>
 <pre class="q-4">
 define draw ((length))
-repeat (length)
-    move (length) steps
+repeat ((length))
+    move ((length)) steps
     turn ccw (???) degrees
 end
 
@@ -507,9 +507,9 @@ repeat (100)
             say (name) for (2) seconds
             change [pass v] by (1)
         end
-            say (The ??? does not match) for (2) seconds
+            say [The ??? does not match] for (2) seconds
     else
-        say (The ??? does not match) for (2) seconds
+        say [The ??? does not match] for (2) seconds
     end
 
 end
