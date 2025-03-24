@@ -28,7 +28,7 @@ end
 
 #!markdown
 
-... זה
+זה ממלא את המסך עם חתולים צבעוניים
 
 #!markdown
 
@@ -56,6 +56,10 @@ end
 #!markdown
 
 מה זה עושה בקצרה  
+
+#!markdown
+
+זה מצייר עיגול
 
 #!markdown
 
@@ -92,7 +96,7 @@ set pen size to (10)          // ... זה
 
 #!markdown
 
-![](img/turtle-q02.png)
+![](img/turtle-q02.png) ![![alt text](image-1.png)](image.png) ![alt text](image-2.png) ![alt text](image-3.png)
 
 #!markdown
 
