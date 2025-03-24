@@ -208,7 +208,7 @@ say (newWord) for (2) seconds
 define draw ((length))
 repeat ((length))
     move ((length)) steps
-    turn ccw (???) degrees
+    turn ccw (90) degrees
 end
 
 when flag clicked
@@ -221,7 +221,7 @@ set [num v] to (50)
 repeat (4)
     draw (num)
     turn ccw (90) degrees
-    change [??? v] by (10)
+    change [num v] by (10)
 end
 </pre>
 
