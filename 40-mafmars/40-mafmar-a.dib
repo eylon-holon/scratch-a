@@ -148,7 +148,7 @@ end
 <script>scratch('q-3-a')</script>
 <pre class="q-3-a">
 when flag clicked
-ask (Enter word) and wait
+ask [Enter word] and wait
 set [word v] to (answer)
 set [n v] to (1)
 set [newWord v] to (#)
