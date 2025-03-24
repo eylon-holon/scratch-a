@@ -1,0 +1,516 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":"csharp","items":[{"aliases":[],"name":"csharp"}]}}
+
+#!html
+
+<script src="../eylon/scratchblocks.min.js"></script>
+<script>
+function scratch(name) {
+    scratchblocks.renderMatching('.' + name, {style: 'scratch3-high-contrast'});
+}
+</script>
+
+#!markdown
+
+### <span style="color:magenta">שאלה 1</span>
+
+#!html
+
+<script>scratch('q-1-a')</script>
+<pre class="q-1-a">
+set [wow v] to (5)
+if <<(wow) > (0)> and <(wow) < (13)>> then
+    say [אמת]
+else
+    say [שקר]
+end
+</pre>
+
+#!markdown
+
+מה תגיד הדמות?  
+
+#!html
+
+<script>scratch('q-1-b')</script>
+<pre class="q-1-b">
+set [wow v] to (11)
+if <<(wow) > (11)> or <(wow) < (11)>> then
+    say [אמת]
+else
+    say [שקר]
+end
+</pre>
+
+#!markdown
+
+מה תגיד הדמות?  
+
+#!html
+
+<script>scratch('q-1-c')</script>
+<pre class="q-1-c">
+set [wow v] to (9)
+if <<((wow) mod (2)) = (0)> and <((wow) mod (3)) = (0)>> then
+    say [אמת]
+else
+    say [שקר]
+end
+</pre>
+
+#!markdown
+
+מה תגיד הדמות?  
+
+#!html
+
+<script>scratch('q-1-d')</script>
+<pre class="q-1-d">
+set [wow v] to (10)
+if <<((wow) / (5)) > (2)> or <((3) + (wow)) = (12)>> then
+    say [אמת]
+else
+    say [שקר]
+end
+</pre>
+
+#!markdown
+
+מה תגיד הדמות?  
+
+#!html
+
+<script>scratch('q-1-e')</script>
+<pre class="q-1-e">
+set [wow v] to (10)
+if <<((wow) - (2)) = ((wow) / (2))> or <((2) + (wow)) > ((2) * (wow))>> then
+    say [אמת]
+else
+    say [שקר]
+end
+</pre>
+
+#!markdown
+
+מה תגיד הדמות?  
+
+#!markdown
+
+### <span style="color:magenta">שאלה 2</span>
+
+#!html
+
+<script>scratch('q-2')</script>
+<pre class="q-2">
+when flag clicked
+ask [Enter a number between 1 to 10] and wait
+set [color v] to (answer)
+if <(color) < (7)> then
+    if <(color) > (3)> then
+        say [Yellow] for (2) seconds
+    else
+        say [Green] for (2) seconds
+    end
+else
+    if <<(color) = (9)> or <(color) = (10)>> then
+        say [Red] for (2) seconds
+    else
+        say [Orange] for (2) seconds
+    end
+end
+</pre>
+
+#!markdown
+
+| answer    | color     |
+| --------  | -------   |
+| 5         |           |
+| 7         |           |
+| 10        |           |
+| 3         |           |
+
+#!markdown
+
+| answer    | color     |
+| --------  | -------   |
+| 1-3       |           |
+| 9-10      |           |
+| 4-6       |           |
+| 7-8       |           |
+
+#!markdown
+
+### <span style="color:magenta">שאלה 3</span>
+
+#!html
+
+<script>scratch('q-3-a')</script>
+<pre class="q-3-a">
+when flag clicked
+ask [Enter word] and wait
+set [word v] to (answer)
+set [n v] to (1)
+set [newWord v] to (#)
+repeat (length of (word))
+    set [tmp v] to (join (letter (n) of (word)) (#))
+    set [newWord v] to (join (newWord) (tmp))
+    change [n v] by (1)
+end
+say (newWord) for (2) seconds
+</pre>
+
+#!markdown
+
+מה תגיד הדמות עבור הקלט  
+<span style="color:green">AWESOME</span>
+
+#!markdown
+
+???
+
+#!markdown
+
+שנו את התוכנית הבאה כך שעבור הקלט  
+<span style="color:green">GREAT</span>  
+הדצות תגיד  
+<span style="color:green">0G1R2E3A4T5</span>  
+
+#!html
+
+<script>scratch('q-3-b')</script>
+<pre class="q-3-b">
+when flag clicked
+ask [Enter word] and wait
+set [word v] to (answer)
+set [n v] to (1)
+set [newWord v] to (???)
+repeat (length of (???))
+    set [tmp v] to (join (letter (???) of (word)) (#))
+    set [newWord v] to (join (newWord) (tmp))
+    change [n v] by (???)
+end
+say (newWord) for (2) seconds
+</pre>
+
+#!markdown
+
+### <span style="color:magenta">שאלה 4</span>
+
+#!markdown
+
+![](img/q-04.png)
+
+#!html
+
+<script>scratch('q-4')</script>
+<pre class="q-4">
+define draw ((length))
+repeat ((length))
+    move ((length)) steps
+    turn ccw (???) degrees
+end
+
+when flag clicked
+point in direction (90)
+erase all
+pen up
+go to x: (0) y: (0)
+pen down
+set [num v] to (50)
+repeat (4)
+    draw (num)
+    turn ccw (90) degrees
+    change [??? v] by (10)
+end
+</pre>
+
+#!markdown
+
+מה הערך הסופי של המשתנה num  
+num?
+
+#!markdown
+
+???
+
+#!html
+
+<script>scratch('q-3-c')</script>
+<pre class="q-3-c">
+when flag clicked
+point in direction (90)
+erase all
+pen up
+go to x: (-100) y: (-100)
+pen down
+set [num v] to (50)
+repeat (4)
+    draw (num)
+    change x by (num)
+    change [num v] by (10)
+end
+</pre>
+
+#!markdown
+
+מה תצייר הדמות
+
+#!markdown
+
+1.![](img/q-4-c-1.png)  $~~~~~$
+2.![](img/q-4-c-2.png)  $~~~~~$
+3.![](img/q-4-c-3.png)  
+4.![](img/q-4-c-4.png)  $~~~~~$
+5.![](img/q-4-c-5.png)  $~~~~~$
+6.![](img/q-4-c-6.png)
+
+#!markdown
+
+???
+
+#!markdown
+
+### <span style="color:magenta">שאלה 5</span>
+
+#!html
+
+<script>scratch('q-5')</script>
+<pre class="q-5">
+when flag clicked
+ask [Enter a number] and wait
+set [num v] to (answer)
+set [sod v] to (0)
+repeat until <(0) = (num)>
+    set [dig v] to ((num) mod (10))
+    if <(sod) < (dig)> then
+        set [sod v] to (dig)
+    end
+    set [num v] to ([floor v] of ((num) / (10)))
+end
+say (sod) for (2) seconds
+</pre>
+
+#!markdown
+
+![](img/q-5.png)
+
+#!markdown
+
+![](img/q-5-a.png)
+
+#!markdown
+
+| answer    | num       |   sod     | dig       | repeat until...   | if...     | say       |
+| --------  | -------   | -------   | -------   | -------           | -------   | -------   |
+| 2643      |           |           |           |                   |           |           |
+| 2643      |           |           |           |                   |           |           |
+| 2643      |           |           |           |                   |           |           |
+| 2643      |           |           |           |                   |           |           |
+| 2643      |           |           |           |                   |           |           |
+| 2643      |           |           |           |                   |           |           |
+| 2643      |           |           |           |                   |           |           |
+| 2643      |           |           |           |                   |           |           |
+
+#!markdown
+
+<img src="img/q-5-b.png" width="600">
+
+#!markdown
+
+| num   | [v] |
+| ----  | --- |
+| 8     | [-] |
+| 189   | [-] |
+| 875   | [-] |
+| 2831  | [-] |
+| 642   | [-] |
+| 78    | [-] |
+
+#!markdown
+
+<img src="img/q-5-c.png" width=600>
+
+#!markdown
+
+|       | [v] |
+| ----  | --- |
+| 1     | [-] |
+| 2     | [-] |
+| 3     | [-] |
+| 4     | [-] |
+| 5     | [-] |
+| 6     | [-] |
+
+#!markdown
+
+### <span style="color:magenta">שאלה 6</span>
+
+#!html
+
+<script>scratch('q-6-1')</script>
+<pre class="q-6-1">
+when flag clicked
+set [number v] to (10)
+repeat until <(number) > (15)>
+    set [number v] to ((number) + (5))
+end
+say (number)
+</pre>
+
+#!markdown
+
+כמה פעמים תתבצע הלולאה?  
+
+#!html
+
+<script>scratch('q-6-2')</script>
+<pre class="q-6-2">
+when flag clicked
+set [number v] to (4)
+set [sum v] to (0)
+repeat until <(number) > (8)>
+    set [sum v] to ((number) + (4))
+end
+say (number)
+</pre>
+
+#!markdown
+
+כמה פעמים תתבצע הלולאה?  
+
+#!html
+
+<script>scratch('q-6-3')</script>
+<pre class="q-6-3">
+when flag clicked
+set [number v] to (1)
+repeat until <(number) = (4)>
+    set [number v] to ((number) + (2))
+end
+say (number)
+</pre>
+
+#!markdown
+
+כמה פעמים תתבצע הלולאה?  
+
+#!html
+
+<script>scratch('q-6-4')</script>
+<pre class="q-6-4">
+when flag clicked
+set [number v] to (5)
+repeat until <(number) > (5)>
+    set [number v] to ((number) + (5))
+end
+say (number)
+</pre>
+
+#!markdown
+
+כמה פעמים תתבצע הלולאה?  
+
+#!markdown
+
+<img src="img/q-6-b.png" width=800>
+
+#!html
+
+<script>scratch('q-6-b-1')</script>
+<pre class="q-6-b-1">
+when flag clicked
+set [sum v] to (0)
+set [times v] to (1)
+ask [Enter a number] and wait
+set [number v] to (answer)
+repeat until <(times) > (number)>
+    change [sum v] by (number)
+    change [times v] by (1)
+end
+say (sum) for (2) seconds
+</pre>
+
+#!markdown
+
+האם זה עובד?  
+
+#!html
+
+<script>scratch('q-6-b-2')</script>
+<pre class="q-6-b-2">
+when flag clicked
+set [sum v] to (0)
+set [times v] to (0)
+ask [Enter a number] and wait
+set [number v] to (answer)
+repeat until <(times) = (number)>
+    change [sum v] by (number)
+    change [times v] by (1)
+end
+say (sum) for (2) seconds
+</pre>
+
+#!markdown
+
+האם זה עובד?  
+
+#!markdown
+
+### <span style="color:magenta">שאלה 7</span>
+
+#!markdown
+
+<img src="img/q-7.png" width=900>
+
+#!html
+
+<script>scratch('q-7-a')</script>
+<pre class="q-7-a">
+when flag clicked
+set [pass v] to (???)
+repeat (???)
+    ask [Enter your name] and wait
+    set [name v] to (answer)
+    ask [Enter your height] and wait
+    set [height v] to (answer)
+    ask [Enter your grade] and wait
+    set [grade v] to (answer)
+    if <<(grade) > (???)> and <(???) > (160)>> then
+        say (name) for (2) seconds
+        change [pass v] by (???)
+    end
+end
+say (???) for (2) seconds
+</pre>
+
+#!markdown
+
+<img src="img/q-7-b.png" width=700>
+
+#!html
+
+<script>scratch('q-7-b')</script>
+<pre class="q-7-b">
+when flag clicked
+set [pass v] to (0)
+repeat (100)
+    ask [Enter your name] and wait
+    set [name v] to (answer)
+    ask [Enter your height] and wait
+    set [height v] to (???)
+    if <(height) > (???)> then
+        ask [Enter your grade] and wait
+        set [??? v] to (???)
+        if <(grade) > (???)> then
+            say (name) for (2) seconds
+            change [pass v] by (1)
+        end
+            say [The ??? does not match] for (2) seconds
+    else
+        say [The ??? does not match] for (2) seconds
+    end
+
+end
+say (pass) for (2) seconds
+</pre>
