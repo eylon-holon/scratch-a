@@ -29,7 +29,8 @@ end
 
 #!markdown
 
-הדמות תגיד אמת
+מה תגיד הדמות?  
+אמת
 
 #!html
 
@@ -45,7 +46,8 @@ end
 
 #!markdown
 
-הדמות אומרת שקר
+מה תגיד הדמות?  
+שקר
 
 #!html
 
@@ -61,7 +63,8 @@ end
 
 #!markdown
 
- הדמות אומרת שקר
+מה תגיד הדמות?  
+שקר 
 
 #!html
 
@@ -77,7 +80,8 @@ end
 
 #!markdown
 
-הדמות אומרת שקר 
+מה תגיד הדמות?  
+שקר
 
 #!html
 
@@ -93,7 +97,8 @@ end
 
 #!markdown
 
-הדמות אומרת שקר  
+מה תגיד הדמות?  
+שקר
 
 #!markdown
 
@@ -125,19 +130,19 @@ end
 
 | answer    | color     |
 | --------  | -------   |
-| 5         |   Yellow        |
-| 7         |    Orange       |
-| 10        |   Red        |
-| 3         |    Yellow       |
+| 5         | Yellow  |
+| 7         | Orange          |
+| 10        | Red          |
+| 3         | Green          |
 
 #!markdown
 
 | answer    | color     |
 | --------  | -------   |
-| 1-3       |    Yellow
-| 9-10      |     Red      |
-| 4-6       | Yellow      |
-| 7-8       |  Green       |
+| 1-3       |  Green         |
+| 9-10      |  Red         |
+| 4-6       |  Yellow         |
+| 7-8       |  Orange         |
 
 #!markdown
 
@@ -153,7 +158,7 @@ set [word v] to (answer)
 set [n v] to (1)
 set [newWord v] to (#)
 repeat (length of (word))
-    set [tmp v] to (join (letter (n) of (word)) [#])
+    set [tmp v] to (join (letter (n) of (word)) (#))
     set [newWord v] to (join (newWord) (tmp))
     change [n v] by (1)
 end
@@ -174,8 +179,7 @@ say (newWord) for (2) seconds
 שנו את התוכנית הבאה כך שעבור הקלט  
 <span style="color:green">GREAT</span>  
 הדצות תגיד  
-<span style="color:green">0G1R2E3A4T5</span> 
-צריך לשנות את n
+<span style="color:green">0G1R2E3A4T5</span>  
 
 #!html
 
@@ -185,11 +189,11 @@ when flag clicked
 ask [Enter word] and wait
 set [word v] to (answer)
 set [n v] to (1)
-set [newWord v] to [???]
-repeat (length of (???))
-    set [tmp v] to (join (letter (???) of (word)) (n))
+set [newWord v] to (0)
+repeat (length of (word))
+    set [tmp v] to (join (letter (n) of (word)) (n))
     set [newWord v] to (join (newWord) (tmp))
-    change [n v] by [???]
+    change [n v] by [1]
 end
 say (newWord) for (2) seconds
 </pre>
@@ -206,10 +210,10 @@ say (newWord) for (2) seconds
 
 <script>scratch('q-4')</script>
 <pre class="q-4">
-define draw ((length))
-repeat ((length))
-    move ((length)) steps
-    turn ccw (90) degrees
+define draw ([length])
+repeat [4]
+    move [length] steps
+    turn ccw [90] degrees
 end
 
 when flag clicked
@@ -219,7 +223,7 @@ pen up
 go to x: (0) y: (0)
 pen down
 set [num v] to (50)
-repeat (4)
+repeat [4]
     draw (num)
     turn ccw (90) degrees
     change [num v] by (10)
@@ -233,7 +237,7 @@ num?
 
 #!markdown
 
-???
+90
 
 #!html
 
@@ -268,7 +272,7 @@ end
 
 #!markdown
 
-???
+2
 
 #!markdown
 
@@ -304,14 +308,12 @@ say (sod) for (2) seconds
 
 | answer    | num       |   sod     | dig       | repeat until...   | if...     | say       |
 | --------  | -------   | -------   | -------   | -------           | -------   | -------   |
-| 2643      |           |           |           |                   |           |           |
-| 2643      |           |           |           |                   |           |           |
-| 2643      |           |           |           |                   |           |           |
-| 2643      |           |           |           |                   |           |           |
-| 2643      |           |           |           |                   |           |           |
-| 2643      |           |           |           |                   |           |           |
-| 2643      |           |           |           |                   |           |           |
-| 2643      |           |           |           |                   |           |           |
+| 2643      | 2643      | 0         |           |                   |           |           |
+| 2643      | 264       | 3         | 3         |  no               | yes       |           |
+| 2643      | 26        | 4         | 4         |  no               | yes       |           |
+| 2643      | 2         | 6         | 6         |  no               | yes       |           |
+| 2643      | 0         | 6         | 2         |  no               | no        |           |
+| 2643      | 0         | 6         |           |  yes              |           | 6         |
 
 #!markdown
 
@@ -321,12 +323,12 @@ say (sod) for (2) seconds
 
 | num   | [v] |
 | ----  | --- |
-| 8     | [-] |
-| 189   | [-] |
-| 875   | [-] |
-| 2831  | [-] |
-| 642   | [-] |
-| 78    | [-] |
+| 8     | [V] |
+| 189   | [X] |
+| 875   | [V] |
+| 2831  | [V] |
+| 642   | [X] |
+| 78    | [V] |
 
 #!markdown
 
@@ -339,7 +341,7 @@ say (sod) for (2) seconds
 | 1     | [-] |
 | 2     | [-] |
 | 3     | [-] |
-| 4     | [-] |
+| 4     | [V] |
 | 5     | [-] |
 | 6     | [-] |
 
@@ -364,6 +366,10 @@ say (number)
 
 כמה פעמים תתבצע הלולאה?  
 
+#!markdown
+
+פעמיים
+
 #!html
 
 <script>scratch('q-6-2')</script>
@@ -381,6 +387,10 @@ say (number)
 
 כמה פעמים תתבצע הלולאה?  
 
+#!markdown
+
+הלולאה לא תסתיים
+
 #!html
 
 <script>scratch('q-6-3')</script>
@@ -396,6 +406,15 @@ say (number)
 #!markdown
 
 כמה פעמים תתבצע הלולאה?  
+
+#!markdown
+
+התותאה לא תסתיים
+
+#!markdown
+
+### <span style="color:magenta">שאלה 6</span>
+#### <span style="color:magenta">סעיף ב</span>
 
 #!html
 
@@ -415,8 +434,7 @@ say (number)
 
 #!markdown
 
-### <span style="color:magenta">שאלה 6</span>
-#### <span style="color:magenta">סעיף ב</span>
+פעם אחת
 
 #!markdown
 
@@ -442,6 +460,10 @@ say (sum) for (2) seconds
 
 האם זה עובד?  
 
+#!markdown
+
+כן
+
 #!html
 
 <script>scratch('q-6-b-2')</script>
@@ -461,6 +483,10 @@ say (sum) for (2) seconds
 #!markdown
 
 האם זה עובד?  
+
+#!markdown
+
+כן
 
 #!markdown
 
@@ -484,12 +510,12 @@ repeat (???)
     set [height v] to (answer)
     ask [Enter your grade] and wait
     set [grade v] to (answer)
-    if <<(grade) > [???]> and <(???) > [160]>> then
+    if <<(grade) > [90]> and <(height) > [160]>> then
         say (name) for (2) seconds
-        change [pass v] by [???]
+        change [pass v] by [1]
     end
 end
-say (???) for (2) seconds
+say (pass) for (2) seconds
 </pre>
 
 #!markdown
@@ -511,17 +537,17 @@ repeat (100)
     ask [Enter your name] and wait
     set [name v] to (answer)
     ask [Enter your height] and wait
-    set [height v] to (???)
-    if <(height) > [???]> then
+    set [height v] to (answer)
+    if <(height) > [160]> then
         ask [Enter your grade] and wait
-        set [??? v] to (???)
-        if <(grade) > [???]> then
+        set [grade v] to (answer)
+        if <(grade) > [90]> then
             say (name) for (2) seconds
             change [pass v] by (1)
         end
-            say [The ??? does not match] for (2) seconds
+            say [The grade does not match] for (2) seconds
     else
-        say [The ??? does not match] for (2) seconds
+        say [The height does not match] for (2) seconds
     end
 
 end
