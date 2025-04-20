@@ -168,7 +168,7 @@ say (newWord) for (2) seconds
 
 #!markdown
 
-1a2w3e4s5o6m7e
+#a#w#e#s#o#m#e#
 
 #!markdown
 
@@ -211,15 +211,9 @@ say (newWord) for (2) seconds
 <script>scratch('q-4')</script>
 <pre class="q-4">
 define draw ((length))
-<<<<<<< HEAD
 repeat (length)
     move (length) steps
     turn ccw (40) degrees
-=======
-repeat ((length))
-    move ((length)) steps
-    turn ccw (???) degrees
->>>>>>> e9da5e993ae17db95257f9e50d62b88e0b0c97a4
 end
 
 when flag clicked
