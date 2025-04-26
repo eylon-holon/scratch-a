@@ -146,7 +146,7 @@ end
 
 #!markdown
 
-### <span style="color:magenta">שאלה 3</span>
+### [🎦](https://youtu.be/xMc06apotEQ) <span style="color:magenta">שאלה 3</span>
 
 #!html
 
@@ -176,7 +176,7 @@ say (newWord) for (2) seconds
 
 #!markdown
 
-שנו את התוכנית הבאה כך שעבור הקלט  
+[🎦](https://youtu.be/e_y1SqQ-X50) שנו את התוכנית הבאה כך שעבור הקלט  
 <span style="color:green">GREAT</span>  
 הדצות תגיד  
 <span style="color:green">0G1R2E3A4T5</span>  
@@ -200,7 +200,7 @@ say (newWord) for (2) seconds
 
 #!markdown
 
-### <span style="color:magenta">שאלה 4</span>
+### [🎦?]() <span style="color:magenta">שאלה 4</span>
 
 #!markdown
 
@@ -212,7 +212,7 @@ say (newWord) for (2) seconds
 <pre class="q-4">
 define draw ([length])
 repeat [4]
-    move [length] steps
+    move ([length]) steps
     turn ccw [90] degrees
 end
 
@@ -276,7 +276,7 @@ end
 
 #!markdown
 
-### <span style="color:magenta">שאלה 5</span>
+### [🎦?]() <span style="color:magenta">שאלה 5</span>
 
 #!html
 
@@ -351,7 +351,7 @@ say (sod) for (2) seconds
 
 #!markdown
 
-#### <span style="color:magenta">סעיף א</span>
+#### [🎦?]() <span style="color:magenta">סעיף א</span>
 
 #!html
 
@@ -416,7 +416,7 @@ say (number)
 
 #!markdown
 
-#### <span style="color:magenta">סעיף ב</span>
+#### [🎦?]() <span style="color:magenta">סעיף ב</span>
 
 #!html
 
@@ -492,11 +492,11 @@ say (sum) for (2) seconds
 
 #!markdown
 
-### <span style="color:magenta">שאלה 7</span>
+### [🎦?]() <span style="color:magenta">שאלה 7</span>
 
 #!markdown
 
-#### <span style="color:magenta">סעיף א</span>
+#### [🎦?]() <span style="color:magenta">סעיף א</span>
 
 #!markdown
 
@@ -525,7 +525,7 @@ say (pass) for (2) seconds
 
 #!markdown
 
-#### <span style="color:magenta">סעיף ב</span>
+#### [🎦?]() <span style="color:magenta">סעיף ב</span>
 
 #!markdown
 
