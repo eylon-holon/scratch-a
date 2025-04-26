@@ -13,7 +13,7 @@ function scratch(name) {
 
 #!markdown
 
-### <span style="color:magenta">שאלה 1</span>
+### [🎦](https://https://youtu.be/wQwFir68Aaw)<span style="color:magenta">שאלה 1</span>
 
 #!html
 
@@ -102,7 +102,7 @@ end
 
 #!markdown
 
-### <span style="color:magenta">שאלה 2</span>
+### [🎦](https://youtu.be/cCfWrXO1zhw) <span style="color:magenta">שאלה 2</span>
 
 #!html
 
@@ -156,9 +156,9 @@ when flag clicked
 ask [Enter word] and wait
 set [word v] to (answer)
 set [n v] to (1)
-set [newWord v] to (#)
+set [newWord v] to [#]
 repeat (length of (word))
-    set [tmp v] to (join (letter (n) of (word)) (#))
+    set [tmp v] to (join (letter (n) of (word)) [#])
     set [newWord v] to (join (newWord) (tmp))
     change [n v] by (1)
 end
@@ -348,6 +348,9 @@ say (sod) for (2) seconds
 #!markdown
 
 ### <span style="color:magenta">שאלה 6</span>
+
+#!markdown
+
 #### <span style="color:magenta">סעיף א</span>
 
 #!html
@@ -413,7 +416,6 @@ say (number)
 
 #!markdown
 
-### <span style="color:magenta">שאלה 6</span>
 #### <span style="color:magenta">סעיף ב</span>
 
 #!html
@@ -491,6 +493,9 @@ say (sum) for (2) seconds
 #!markdown
 
 ### <span style="color:magenta">שאלה 7</span>
+
+#!markdown
+
 #### <span style="color:magenta">סעיף א</span>
 
 #!markdown
@@ -502,8 +507,8 @@ say (sum) for (2) seconds
 <script>scratch('q-7-a')</script>
 <pre class="q-7-a">
 when flag clicked
-set [pass v] to (???)
-repeat (???)
+set [pass v] to [???]
+repeat [???]
     ask [Enter your name] and wait
     set [name v] to (answer)
     ask [Enter your height] and wait
@@ -520,7 +525,6 @@ say (pass) for (2) seconds
 
 #!markdown
 
-### <span style="color:magenta">שאלה 7</span>
 #### <span style="color:magenta">סעיף ב</span>
 
 #!markdown

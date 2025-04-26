@@ -13,7 +13,7 @@ function scratch(name) {
 
 #!markdown
 
-### <span style="color:magenta">שאלה 1</span>
+### <span style="color:magenta">שאלה 1</span> 
 
 #!html
 
@@ -345,6 +345,9 @@ say (sod) for (2) seconds
 #!markdown
 
 ### <span style="color:magenta">שאלה 6</span>
+
+#!markdown
+
 #### <span style="color:magenta">סעיף א</span>
 
 #!html
@@ -414,7 +417,6 @@ say (number)
 
 #!markdown
 
-### <span style="color:magenta">שאלה 6</span>
 #### <span style="color:magenta">סעיף ב</span>
 
 #!markdown
@@ -464,6 +466,9 @@ say (sum) for (2) seconds
 #!markdown
 
 ### <span style="color:magenta">שאלה 7</span>
+
+#!markdown
+
 #### <span style="color:magenta">סעיף א</span>
 
 #!markdown
@@ -493,7 +498,6 @@ say (???) for (2) seconds
 
 #!markdown
 
-### <span style="color:magenta">שאלה 7</span>
 #### <span style="color:magenta">סעיף ב</span>
 
 #!markdown
