@@ -146,7 +146,7 @@ end
 
 #!markdown
 
-### [🎦](https://youtu.be/xMc06apotEQ) <span style="color:magenta">שאלה 3</span>
+### [🎦](https://youtu.be/xMc06apotEQ)[😺](https://scratch.mit.edu/projects/1167446607/) <span style="color:magenta">שאלה 3</span>
 
 #!html
 
@@ -200,7 +200,11 @@ say (newWord) for (2) seconds
 
 #!markdown
 
-### [🎦?]() <span style="color:magenta">שאלה 4</span>
+### <span style="color:magenta">שאלה 4</span>
+
+#!markdown
+
+#### [🎦?]()[😺](https://scratch.mit.edu/projects/1167448913) <span style="color:magenta">סעיף א</span>
 
 #!markdown
 
@@ -238,6 +242,10 @@ num?
 #!markdown
 
 90
+
+#!markdown
+
+#### [🎦?]()[😺](https://scratch.mit.edu/projects/1167448913) <span style="color:magenta">סעיף ב</span>
 
 #!html
 
