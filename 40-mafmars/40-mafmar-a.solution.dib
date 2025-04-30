@@ -102,7 +102,11 @@ end
 
 #!markdown
 
-### [🎦](https://youtu.be/cCfWrXO1zhw) <span style="color:magenta">שאלה 2</span>
+---
+
+#!markdown
+
+### [🎦](https://youtu.be/cCfWrXO1zhw)[😺](https://scratch.mit.edu/projects/1168628068) <span style="color:magenta">שאלה 2</span>
 
 #!html
 
@@ -143,6 +147,10 @@ end
 | 9-10      |  Red         |
 | 4-6       |  Yellow         |
 | 7-8       |  Orange         |
+
+#!markdown
+
+---
 
 #!markdown
 
@@ -359,7 +367,7 @@ say (sod) for (2) seconds
 
 #!markdown
 
-#### [🎦?]() <span style="color:magenta">סעיף א</span>
+#### [🎦?]()[😺](https://scratch.mit.edu/projects/1168359752) <span style="color:magenta">סעיף א</span>
 
 #!html
 
@@ -422,10 +430,6 @@ say (number)
 
 התותאה לא תסתיים
 
-#!markdown
-
-#### [🎦?]() <span style="color:magenta">סעיף ב</span>
-
 #!html
 
 <script>scratch('q-6-4')</script>
@@ -445,6 +449,10 @@ say (number)
 #!markdown
 
 פעם אחת
+
+#!markdown
+
+#### [🎦?]() [😺](https://scratch.mit.edu/projects/1168551923) <span style="color:magenta">סעיף ב</span>
 
 #!markdown
 
@@ -500,7 +508,7 @@ say (sum) for (2) seconds
 
 #!markdown
 
-### [🎦?]() <span style="color:magenta">שאלה 7</span>
+### [😺](https://scratch.mit.edu/projects/1168621342) <span style="color:magenta">שאלה 7</span>
 
 #!markdown
 
@@ -515,8 +523,8 @@ say (sum) for (2) seconds
 <script>scratch('q-7-a')</script>
 <pre class="q-7-a">
 when flag clicked
-set [pass v] to [???]
-repeat [???]
+set [pass v] to [0]
+repeat [100]
     ask [Enter your name] and wait
     set [name v] to (answer)
     ask [Enter your height] and wait
@@ -556,8 +564,9 @@ repeat (100)
         if <(grade) > [90]> then
             say (name) for (2) seconds
             change [pass v] by (1)
-        end
+        else
             say [The grade does not match] for (2) seconds
+        end
     else
         say [The height does not match] for (2) seconds
     end
