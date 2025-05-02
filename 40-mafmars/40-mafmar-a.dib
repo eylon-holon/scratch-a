@@ -283,6 +283,10 @@ end
 
 #!markdown
 
+---
+
+#!markdown
+
 ### <span style="color:magenta">שאלה 5</span>
 
 #!html
@@ -433,6 +437,10 @@ say (number)
 
 #!markdown
 
+---
+
+#!markdown
+
 #### <span style="color:magenta">סעיף ב</span>
 
 #!markdown
@@ -518,6 +526,10 @@ say (???) for (2) seconds
 
 #!markdown
 
+---
+
+#!markdown
+
 #### <span style="color:magenta">סעיף ב</span>
 
 #!markdown
@@ -541,8 +553,9 @@ repeat (100)
         if <(grade) > [???]> then
             say (name) for (2) seconds
             change [pass v] by (1)
-        end
+        else
             say [The ??? does not match] for (2) seconds
+        end
     else
         say [The ??? does not match] for (2) seconds
     end
