@@ -501,7 +501,7 @@ say (sum) for (2) seconds
 <pre class="q-7-a">
 when flag clicked
 set [pass v] to [???]
-repeat [???}
+repeat [???]
     ask [Enter your name] and wait
     set [name v] to (answer)
     ask [Enter your height] and wait
