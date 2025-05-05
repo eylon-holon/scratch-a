@@ -13,7 +13,7 @@ function scratch(name) {
 
 #!markdown
 
-### <span style="color:magenta">שאלה 1</span>
+### <span style="color:magenta">שאלה 1</span> 
 
 #!html
 
@@ -97,6 +97,10 @@ end
 
 #!markdown
 
+---
+
+#!markdown
+
 ### <span style="color:magenta">שאלה 2</span>
 
 #!html
@@ -138,6 +142,10 @@ end
 | 9-10      |           |
 | 4-6       |           |
 | 7-8       |           |
+
+#!markdown
+
+---
 
 #!markdown
 
@@ -192,6 +200,10 @@ repeat (length of (???))
 end
 say (newWord) for (2) seconds
 </pre>
+
+#!markdown
+
+---
 
 #!markdown
 
@@ -271,6 +283,10 @@ end
 
 #!markdown
 
+---
+
+#!markdown
+
 ### <span style="color:magenta">שאלה 5</span>
 
 #!html
@@ -344,7 +360,14 @@ say (sod) for (2) seconds
 
 #!markdown
 
+---
+
+#!markdown
+
 ### <span style="color:magenta">שאלה 6</span>
+
+#!markdown
+
 #### <span style="color:magenta">סעיף א</span>
 
 #!html
@@ -414,7 +437,10 @@ say (number)
 
 #!markdown
 
-### <span style="color:magenta">שאלה 6</span>
+---
+
+#!markdown
+
 #### <span style="color:magenta">סעיף ב</span>
 
 #!markdown
@@ -463,7 +489,14 @@ say (sum) for (2) seconds
 
 #!markdown
 
+---
+
+#!markdown
+
 ### <span style="color:magenta">שאלה 7</span>
+
+#!markdown
+
 #### <span style="color:magenta">סעיף א</span>
 
 #!markdown
@@ -475,8 +508,8 @@ say (sum) for (2) seconds
 <script>scratch('q-7-a')</script>
 <pre class="q-7-a">
 when flag clicked
-set [pass v] to (???)
-repeat (???)
+set [pass v] to [???]
+repeat [???}
     ask [Enter your name] and wait
     set [name v] to (answer)
     ask [Enter your height] and wait
@@ -493,7 +526,10 @@ say (???) for (2) seconds
 
 #!markdown
 
-### <span style="color:magenta">שאלה 7</span>
+---
+
+#!markdown
+
 #### <span style="color:magenta">סעיף ב</span>
 
 #!markdown
@@ -517,8 +553,9 @@ repeat (100)
         if <(grade) > [???]> then
             say (name) for (2) seconds
             change [pass v] by (1)
-        end
+        else
             say [The ??? does not match] for (2) seconds
+        end
     else
         say [The ??? does not match] for (2) seconds
     end
