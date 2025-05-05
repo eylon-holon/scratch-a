@@ -167,14 +167,14 @@ say (newWord) for (2) seconds
 
 #!markdown
 
-1a2w3e4s5o6m7e
+#A#W#E#S#O#M#E#
 
 #!markdown
 
 שנו את התוכנית הבאה כך שעבור הקלט  
 <span style="color:green">GREAT</span>  
 הדצות תגיד  
-<span style="color:green">0G1R2E3A4T5</span>  
+<span style="color:green">#G#R#E#A#T</span>  
 
 #!markdown
 
@@ -303,13 +303,11 @@ say (sod) for (2) seconds
 
 | answer    | num       |   sod     | dig       | repeat until...   | if...     | say       |
 | --------  | -------   | -------   | -------   | -------            | -------   | -------   |
-| 2643      |     
-   |          |           |                  |           |           |
-| 2643      |           |           |           |                   |           |           |
-| 2643      |           |           |           |                   |           |           |
-| 2643      |           |           |           |                   |           |           |
-| 2643      |           |           |           |                   |           |           |
-| 2643      |           |           |           |                   |           |           |
+| 2643      |    2643   |   0    |        3   |            NO      |  YES        |      0     |
+| 2643      |     264      |    3       |      4     |             NO      |   YES        |     3      |
+| 2643      |   26       |       4    |      6    |      NO             |       YES    |     4      |
+| 2643      |       2    |     6      |     2      |        YES           |        NO   |      6     |
+| 2643      |       0    |       6    |      2     |      YES             |      NO     |       6    |
 | 2643      |           |           |           |                   |           |           |
 | 2643      |           |           |           |                   |           |           |
 
