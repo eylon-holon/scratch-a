@@ -13,7 +13,7 @@ function scratch(name) {
 
 #!markdown
 
-### <span style="color:magenta">שאלה 1</span> 
+### [🎦](https://youtu.be/wQwFir68Aaw)<span style="color:magenta">שאלה 1</span>
 
 #!html
 
@@ -29,7 +29,8 @@ end
 
 #!markdown
 
-הדמות תגיד אמת
+מה תגיד הדמות?  
+אמת
 
 #!html
 
@@ -45,7 +46,8 @@ end
 
 #!markdown
 
-הדמות תגיד שקר
+מה תגיד הדמות?  
+שקר
 
 #!html
 
@@ -61,7 +63,8 @@ end
 
 #!markdown
 
-הדמות תגיד שקר
+מה תגיד הדמות?  
+שקר 
 
 #!html
 
@@ -77,7 +80,8 @@ end
 
 #!markdown
 
-הדמות תגיד שקר
+מה תגיד הדמות?  
+שקר
 
 #!html
 
@@ -93,7 +97,8 @@ end
 
 #!markdown
 
-הדמות תגיד שקר
+מה תגיד הדמות?  
+שקר
 
 #!markdown
 
@@ -101,7 +106,7 @@ end
 
 #!markdown
 
-### <span style="color:magenta">שאלה 2</span>
+### [🎦](https://youtu.be/cCfWrXO1zhw)[😺](https://scratch.mit.edu/projects/1168628068) <span style="color:magenta">שאלה 2</span>
 
 #!html
 
@@ -129,19 +134,19 @@ end
 
 | answer    | color     |
 | --------  | -------   |
-| 5         |    yeliow       |
-| 7         |       green    |
-| 10        |         red  |
-| 3         |       orange    |
+| 5         | Yellow  |
+| 7         | Orange          |
+| 10        | Red          |
+| 3         | Green          |
 
 #!markdown
 
 | answer    | color     |
 | --------  | -------   |
-| 1-3       |         orange  |
-| 9-10      |       red    |
-| 4-6       |          green |
-| 7-8       |        yellow   |
+| 1-3       |  Green         |
+| 9-10      |  Red         |
+| 4-6       |  Yellow         |
+| 7-8       |  Orange         |
 
 #!markdown
 
@@ -149,7 +154,7 @@ end
 
 #!markdown
 
-### <span style="color:magenta">שאלה 3</span>
+### [🎦](https://youtu.be/xMc06apotEQ)[😺](https://scratch.mit.edu/projects/1167446607/) <span style="color:magenta">שאלה 3</span>
 
 #!html
 
@@ -159,7 +164,7 @@ when flag clicked
 ask [Enter word] and wait
 set [word v] to (answer)
 set [n v] to (1)
-set [newWord v] to (#)
+set [newWord v] to [#]
 repeat (length of (word))
     set [tmp v] to (join (letter (n) of (word)) [#])
     set [newWord v] to (join (newWord) (tmp))
@@ -179,14 +184,10 @@ say (newWord) for (2) seconds
 
 #!markdown
 
-שנו את התוכנית הבאה כך שעבור הקלט  
+[🎦](https://youtu.be/e_y1SqQ-X50) שנו את התוכנית הבאה כך שעבור הקלט  
 <span style="color:green">GREAT</span>  
 הדצות תגיד  
-<span style="color:green">#G#R#E#A#T</span>  
-
-#!markdown
-
-צריך לשנות את n 0ל    
+<span style="color:green">0G1R2E3A4T5</span>  
 
 #!html
 
@@ -196,22 +197,22 @@ when flag clicked
 ask [Enter word] and wait
 set [word v] to (answer)
 set [n v] to (1)
-set [newWord v] to [???]
-repeat (length of (???))
-    set [tmp v] to (join (letter (???) of (word)) (n))
+set [newWord v] to (0)
+repeat (length of (word))
+    set [tmp v] to (join (letter (n) of (word)) (n))
     set [newWord v] to (join (newWord) (tmp))
-    change [n v] by [???]
+    change [n v] by [1]
 end
 say (newWord) for (2) seconds
 </pre>
 
 #!markdown
 
----
+### <span style="color:magenta">שאלה 4</span>
 
 #!markdown
 
-### <span style="color:magenta">שאלה 4</span>
+#### [🎦](https://youtu.be/B3699daOd6k)[😺](https://scratch.mit.edu/projects/1167448913) <span style="color:magenta">סעיף א</span>
 
 #!markdown
 
@@ -221,10 +222,10 @@ say (newWord) for (2) seconds
 
 <script>scratch('q-4')</script>
 <pre class="q-4">
-define draw ((length))
-repeat (length)
-    move (length) steps
-    turn ccw (40) degrees
+define draw ([length])
+repeat [4]
+    move ([length]) steps
+    turn ccw [90] degrees
 end
 
 when flag clicked
@@ -234,10 +235,10 @@ pen up
 go to x: (0) y: (0)
 pen down
 set [num v] to (50)
-repeat (4)
+repeat [4]
     draw (num)
     turn ccw (90) degrees
-    change [ num] by (10)
+    change [num v] by (10)
 end
 </pre>
 
@@ -249,6 +250,10 @@ num?
 #!markdown
 
 90
+
+#!markdown
+
+#### [🎦](https://youtu.be/1G096jLR-xg)[😺](https://scratch.mit.edu/projects/1167448913) <span style="color:magenta">סעיף ב</span>
 
 #!html
 
@@ -270,7 +275,7 @@ end
 
 #!markdown
 
-צורה מספר 2
+מה תצייר הדמות
 
 #!markdown
 
@@ -283,7 +288,15 @@ end
 
 #!markdown
 
-### <span style="color:magenta">שאלה 5</span>
+2
+
+#!markdown
+
+---
+
+#!markdown
+
+### [🎦](https://youtu.be/Ad-SxDwVd_I)[😺](https://scratch.mit.edu/projects/1167464429) <span style="color:magenta">שאלה 5</span>
 
 #!html
 
@@ -314,14 +327,13 @@ say (sod) for (2) seconds
 #!markdown
 
 | answer    | num       |   sod     | dig       | repeat until...   | if...     | say       |
-| --------  | -------   | -------   | -------   | -------            | -------   | -------   |
-| 2643      |    2643   |   0    |        3   |            NO      |  YES        |      0     |
-| 2643      |     264      |    3       |      4     |             NO      |   YES        |     3      |
-| 2643      |   26       |       4    |      6    |      NO             |       YES    |     4      |
-| 2643      |       2    |     6      |     2      |        YES           |        NO   |      6     |
-| 2643      |       0    |       6    |      2     |      YES             |      NO     |       6    |
-| 2643      |           |           |           |                   |           |           |
-| 2643      |           |           |           |                   |           |           |
+| --------  | -------   | -------   | -------   | -------           | -------   | -------   |
+| 2643      | 2643      | 0         |           |                   |           |           |
+| 2643      | 264       | 3         | 3         |  no               | yes       |           |
+| 2643      | 26        | 4         | 4         |  no               | yes       |           |
+| 2643      | 2         | 6         | 6         |  no               | yes       |           |
+| 2643      | 0         | 6         | 2         |  no               | no        |           |
+| 2643      | 0         | 6         |           |  yes              |           | 6         |
 
 #!markdown
 
@@ -331,12 +343,12 @@ say (sod) for (2) seconds
 
 | num   | [v] |
 | ----  | --- |
-| 8     | [-] |
-| 189   | [-] |
-| 875   | [-] |
-| 2831  | [-] |
-| 642   | [-] |
-| 78    | [-] |
+| 8     | [V] |
+| 189   | [X] |
+| 875   | [V] |
+| 2831  | [V] |
+| 642   | [X] |
+| 78    | [V] |
 
 #!markdown
 
@@ -349,7 +361,7 @@ say (sod) for (2) seconds
 | 1     | [-] |
 | 2     | [-] |
 | 3     | [-] |
-| 4     | [-] |
+| 4     | [V] |
 | 5     | [-] |
 | 6     | [-] |
 
@@ -363,7 +375,7 @@ say (sod) for (2) seconds
 
 #!markdown
 
-#### <span style="color:magenta">סעיף א</span>
+#### [🎦](https://youtu.be/EWfXvJQ41D8)[😺](https://scratch.mit.edu/projects/1168359752) <span style="color:magenta">סעיף א</span>
 
 #!html
 
@@ -379,7 +391,11 @@ say (number)
 
 #!markdown
 
-20
+כמה פעמים תתבצע הלולאה?  
+
+#!markdown
+
+פעמיים
 
 #!html
 
@@ -398,6 +414,10 @@ say (number)
 
 כמה פעמים תתבצע הלולאה?  
 
+#!markdown
+
+הלולאה לא תסתיים
+
 #!html
 
 <script>scratch('q-6-3')</script>
@@ -413,6 +433,10 @@ say (number)
 #!markdown
 
 כמה פעמים תתבצע הלולאה?  
+
+#!markdown
+
+התותאה לא תסתיים
 
 #!html
 
@@ -432,11 +456,15 @@ say (number)
 
 #!markdown
 
+פעם אחת
+
+#!markdown
+
 ---
 
 #!markdown
 
-#### <span style="color:magenta">סעיף ב</span>
+#### [🎦](https://youtu.be/4Wx863vBxnc) [😺](https://scratch.mit.edu/projects/1168551923) <span style="color:magenta">סעיף ב</span>
 
 #!markdown
 
@@ -462,6 +490,10 @@ say (sum) for (2) seconds
 
 האם זה עובד?  
 
+#!markdown
+
+כן
+
 #!html
 
 <script>scratch('q-6-b-2')</script>
@@ -484,15 +516,19 @@ say (sum) for (2) seconds
 
 #!markdown
 
+כן
+
+#!markdown
+
 ---
 
 #!markdown
 
-### <span style="color:magenta">שאלה 7</span>
+### [😺](https://scratch.mit.edu/projects/1168621342) <span style="color:magenta">שאלה 7</span>
 
 #!markdown
 
-#### <span style="color:magenta">סעיף א</span>
+#### [🎦](https://youtu.be/akU04_cOic8) <span style="color:magenta">סעיף א</span>
 
 #!markdown
 
@@ -503,20 +539,20 @@ say (sum) for (2) seconds
 <script>scratch('q-7-a')</script>
 <pre class="q-7-a">
 when flag clicked
-set [pass v] to [???]
-repeat [???}
+set [pass v] to [0]
+repeat [100]
     ask [Enter your name] and wait
     set [name v] to (answer)
     ask [Enter your height] and wait
     set [height v] to (answer)
     ask [Enter your grade] and wait
     set [grade v] to (answer)
-    if <<(grade) > [???]> and <(???) > [160]>> then
+    if <<(grade) > [90]> and <(height) > [160]>> then
         say (name) for (2) seconds
-        change [pass v] by [???]
+        change [pass v] by [1]
     end
 end
-say (???) for (2) seconds
+say (pass) for (2) seconds
 </pre>
 
 #!markdown
@@ -525,7 +561,7 @@ say (???) for (2) seconds
 
 #!markdown
 
-#### <span style="color:magenta">סעיף ב</span>
+#### [🎦](https://youtu.be/ccrYvIWGm4g) <span style="color:magenta">סעיף ב</span>
 
 #!markdown
 
@@ -541,18 +577,18 @@ repeat (100)
     ask [Enter your name] and wait
     set [name v] to (answer)
     ask [Enter your height] and wait
-    set [height v] to (???)
-    if <(height) > [???]> then
+    set [height v] to (answer)
+    if <(height) > [160]> then
         ask [Enter your grade] and wait
-        set [??? v] to (???)
-        if <(grade) > [???]> then
+        set [grade v] to (answer)
+        if <(grade) > [90]> then
             say (name) for (2) seconds
             change [pass v] by (1)
         else
-            say [The ??? does not match] for (2) seconds
+            say [The grade does not match] for (2) seconds
         end
     else
-        say [The ??? does not match] for (2) seconds
+        say [The height does not match] for (2) seconds
     end
 
 end
