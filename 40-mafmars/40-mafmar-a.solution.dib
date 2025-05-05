@@ -13,7 +13,7 @@ function scratch(name) {
 
 #!markdown
 
-### [🎦](https://https://youtu.be/wQwFir68Aaw)<span style="color:magenta">שאלה 1</span>
+### [🎦](https://youtu.be/wQwFir68Aaw)<span style="color:magenta">שאלה 1</span>
 
 #!html
 
@@ -102,7 +102,11 @@ end
 
 #!markdown
 
-### [🎦](https://youtu.be/cCfWrXO1zhw) <span style="color:magenta">שאלה 2</span>
+---
+
+#!markdown
+
+### [🎦](https://youtu.be/cCfWrXO1zhw)[😺](https://scratch.mit.edu/projects/1168628068) <span style="color:magenta">שאלה 2</span>
 
 #!html
 
@@ -143,6 +147,10 @@ end
 | 9-10      |  Red         |
 | 4-6       |  Yellow         |
 | 7-8       |  Orange         |
+
+#!markdown
+
+---
 
 #!markdown
 
@@ -284,6 +292,10 @@ end
 
 #!markdown
 
+---
+
+#!markdown
+
 ### [🎦](https://youtu.be/Ad-SxDwVd_I)[😺](https://scratch.mit.edu/projects/1167464429) <span style="color:magenta">שאלה 5</span>
 
 #!markdown
@@ -355,11 +367,15 @@ say (sod) for (2) seconds
 
 #!markdown
 
+---
+
+#!markdown
+
 ### <span style="color:magenta">שאלה 6</span>
 
 #!markdown
 
-#### [🎦?]() <span style="color:magenta">סעיף א</span>
+#### [🎦](https://youtu.be/EWfXvJQ41D8)[😺](https://scratch.mit.edu/projects/1168359752) <span style="color:magenta">סעיף א</span>
 
 #!html
 
@@ -448,6 +464,14 @@ say (number)
 
 #!markdown
 
+---
+
+#!markdown
+
+#### [🎦](https://youtu.be/4Wx863vBxnc) [😺](https://scratch.mit.edu/projects/1168551923) <span style="color:magenta">סעיף ב</span>
+
+#!markdown
+
 <img src="img/q-6-b.png" width=800>
 
 #!html
@@ -500,11 +524,15 @@ say (sum) for (2) seconds
 
 #!markdown
 
-### [🎦?]() <span style="color:magenta">שאלה 7</span>
+---
 
 #!markdown
 
-#### [🎦?]() <span style="color:magenta">סעיף א</span>
+### [😺](https://scratch.mit.edu/projects/1168621342) <span style="color:magenta">שאלה 7</span>
+
+#!markdown
+
+#### [🎦](https://youtu.be/akU04_cOic8) <span style="color:magenta">סעיף א</span>
 
 #!markdown
 
@@ -515,8 +543,8 @@ say (sum) for (2) seconds
 <script>scratch('q-7-a')</script>
 <pre class="q-7-a">
 when flag clicked
-set [pass v] to [???]
-repeat [???]
+set [pass v] to [0]
+repeat [100]
     ask [Enter your name] and wait
     set [name v] to (answer)
     ask [Enter your height] and wait
@@ -533,7 +561,11 @@ say (pass) for (2) seconds
 
 #!markdown
 
-#### [🎦?]() <span style="color:magenta">סעיף ב</span>
+---
+
+#!markdown
+
+#### [🎦](https://youtu.be/ccrYvIWGm4g) <span style="color:magenta">סעיף ב</span>
 
 #!markdown
 
@@ -556,8 +588,9 @@ repeat (100)
         if <(grade) > [90]> then
             say (name) for (2) seconds
             change [pass v] by (1)
-        end
+        else
             say [The grade does not match] for (2) seconds
+        end
     else
         say [The height does not match] for (2) seconds
     end
