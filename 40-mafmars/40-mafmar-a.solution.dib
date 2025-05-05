@@ -210,7 +210,7 @@ say (newWord) for (2) seconds
 
 ![](img/q-04.png)
 
-#!html
+#!markdown
 
 <script>scratch('q-4')</script>
 <pre class="q-4">
@@ -247,7 +247,7 @@ num?
 
 #### [🎦](https://youtu.be/1G096jLR-xg)[😺](https://scratch.mit.edu/projects/1167448913) <span style="color:magenta">סעיף ב</span>
 
-#!html
+#!markdown
 
 <script>scratch('q-3-c')</script>
 <pre class="q-3-c">
@@ -286,7 +286,7 @@ end
 
 ### [🎦](https://youtu.be/Ad-SxDwVd_I)[😺](https://scratch.mit.edu/projects/1167464429) <span style="color:magenta">שאלה 5</span>
 
-#!html
+#!markdown
 
 <script>scratch('q-5')</script>
 <pre class="q-5">
@@ -402,7 +402,7 @@ say (number)
 
 הלולאה לא תסתיים
 
-#!html
+#!markdown
 
 <script>scratch('q-6-3')</script>
 <pre class="q-6-3">
@@ -426,7 +426,7 @@ say (number)
 
 #### [🎦?]() <span style="color:magenta">סעיף ב</span>
 
-#!html
+#!markdown
 
 <script>scratch('q-6-4')</script>
 <pre class="q-6-4">
@@ -474,7 +474,7 @@ say (sum) for (2) seconds
 
 כן
 
-#!html
+#!markdown
 
 <script>scratch('q-6-b-2')</script>
 <pre class="q-6-b-2">
