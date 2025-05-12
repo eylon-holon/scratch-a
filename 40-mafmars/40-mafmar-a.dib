@@ -167,14 +167,14 @@ say (newWord) for (2) seconds
 
 #!markdown
 
-1a2w3e4s5o6m7e
+#A#W#E#S#O#M#E#
 
 #!markdown
 
 שנו את התוכנית הבאה כך שעבור הקלט  
 <span style="color:green">GREAT</span>  
 הדצות תגיד  
-<span style="color:green">0G1R2E3A4T5</span>  
+<span style="color:green">#G#R#E#A#T#</span>  
 
 #!markdown
 
@@ -307,14 +307,12 @@ say (sod) for (2) seconds
 
 | answer    | num       |   sod     | dig       | repeat until...   | if...     | say       |
 | --------  | -------   | -------   | -------   | -------           | -------   | -------   |
-| 2643      |           |           |           |                   |           |           |
-| 2643      |           |           |           |                   |           |           |
-| 2643      |           |           |           |                   |           |           |
-| 2643      |           |           |           |                   |           |           |
-| 2643      |           |           |           |                   |           |           |
-| 2643      |           |           |           |                   |           |           |
-| 2643      |           |           |           |                   |           |           |
-| 2643      |           |           |           |                   |           |           |
+| 2643      | 2643          |  0         |           |                   |           |          |
+| 2643      |    264       |     3      |    3       |      NO             |       YES    |          |
+| 2643      |   26        |      4     |    4      |          NO         |      YES    |          |
+| 2643      |      2     |        6   |       6    |           NO       |       YES    |           |
+| 2643      |     0      |       6    |      2     |           NO        |       NO    |           |
+| 2643      |         0  |      6     |           |          YES         |           |        6   |
 
 #!markdown
 
@@ -324,12 +322,12 @@ say (sod) for (2) seconds
 
 | num   | [v] |
 | ----  | --- |
-| 8     | [-] |
-| 189   | [-] |
-| 875   | [-] |
-| 2831  | [-] |
+| 8     | [כן] |
+| 189   | [] |
+| 875   | [כן] |
+| 2831  | [כן] |
 | 642   | [-] |
-| 78    | [-] |
+| 78    | [כן] |
 
 #!markdown
 
@@ -342,7 +340,7 @@ say (sod) for (2) seconds
 | 1     | [-] |
 | 2     | [-] |
 | 3     | [-] |
-| 4     | [-] |
+| 4     | [כן] |
 | 5     | [-] |
 | 6     | [-] |
 
@@ -381,7 +379,7 @@ say (number)
 
 #!markdown
 
-כמה פעמים תתבצע הלולאה?  
+1
 
 #!html
 
@@ -397,7 +395,7 @@ say (number)
 
 #!markdown
 
-כמה פעמים תתבצע הלולאה?  
+אן סוף
 
 #!html
 
@@ -413,7 +411,7 @@ say (number)
 
 #!markdown
 
-כמה פעמים תתבצע הלולאה?  
+1 
 
 #!markdown
 
@@ -437,7 +435,7 @@ say (sum) for (2) seconds
 
 #!markdown
 
-האם זה עובד?  
+כן
 
 #!html
 
@@ -457,7 +455,7 @@ say (sum) for (2) seconds
 
 #!markdown
 
-האם זה עובד?  
+כן
 
 #!markdown
 
@@ -472,20 +470,20 @@ say (sum) for (2) seconds
 <script>scratch('q-7-a')</script>
 <pre class="q-7-a">
 when flag clicked
-set [pass v] to (???)
-repeat (???)
+set [pass v] to (0)
+repeat (100)
     ask [Enter your name] and wait
     set [name v] to (answer)
     ask [Enter your height] and wait
     set [height v] to (answer)
     ask [Enter your grade] and wait
     set [grade v] to (answer)
-    if <<(grade) > (???)> and <(???) > (160)>> then
+    if <<(grade) > (90)> and <(height) > (160)>> then
         say (name) for (2) seconds
-        change [pass v] by (???)
+        change [pass v] by (1)
     end
 end
-say (???) for (2) seconds
+say (pass) for (2) seconds
 </pre>
 
 #!markdown
