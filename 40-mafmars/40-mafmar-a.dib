@@ -138,10 +138,10 @@ end
 
 | answer    | color     |
 | --------  | -------   |
-| 1-3       |         orange  |
+| 1-3       |         green  |
 | 9-10      |       red    |
-| 4-6       |          green |
-| 7-8       |        yellow   |
+| 4-6       |         yellow|
+| 7-8       |       orange   |
 
 #!markdown
 
@@ -182,11 +182,11 @@ say (newWord) for (2) seconds
 שנו את התוכנית הבאה כך שעבור הקלט  
 <span style="color:green">GREAT</span>  
 הדצות תגיד  
-<span style="color:green">#G#R#E#A#T</span>  
+<span style="color:green">0G1R2E3A4T5</span>  
 
 #!markdown
 
-צריך לשנות את n 0ל    
+  
 
 #!html
 
@@ -480,7 +480,7 @@ say (sum) for (2) seconds
 
 #!markdown
 
-האם זה עובד?  
+כן  
 
 #!markdown
 
@@ -503,20 +503,20 @@ say (sum) for (2) seconds
 <script>scratch('q-7-a')</script>
 <pre class="q-7-a">
 when flag clicked
-set [pass v] to [???]
-repeat [???}
+set [pass v] to [0]
+repeat [100}
     ask [Enter your name] and wait
     set [name v] to (answer)
     ask [Enter your height] and wait
     set [height v] to (answer)
     ask [Enter your grade] and wait
     set [grade v] to (answer)
-    if <<(grade) > [???]> and <(???) > [160]>> then
+    if <<(grade) > [90]> and <(height) > [160]>> then
         say (name) for (2) seconds
-        change [pass v] by [???]
+        change [pass v] by [1]
     end
 end
-say (???) for (2) seconds
+say (pass) for (2) seconds
 </pre>
 
 #!markdown
@@ -530,31 +530,3 @@ say (???) for (2) seconds
 #!markdown
 
 <img src="img/q-7-b.png" width=700>
-
-#!html
-
-<script>scratch('q-7-b')</script>
-<pre class="q-7-b">
-when flag clicked
-set [pass v] to (0)
-repeat (100)
-    ask [Enter your name] and wait
-    set [name v] to (answer)
-    ask [Enter your height] and wait
-    set [height v] to (???)
-    if <(height) > [???]> then
-        ask [Enter your grade] and wait
-        set [??? v] to (???)
-        if <(grade) > [???]> then
-            say (name) for (2) seconds
-            change [pass v] by (1)
-        else
-            say [The ??? does not match] for (2) seconds
-        end
-    else
-        say [The ??? does not match] for (2) seconds
-    end
-
-end
-say (pass) for (2) seconds
-</pre>
