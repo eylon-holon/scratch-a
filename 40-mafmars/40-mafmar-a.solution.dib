@@ -13,7 +13,7 @@ function scratch(name) {
 
 #!markdown
 
-### <span style="color:magenta">שאלה 1</span>
+### [🎦](https://youtu.be/wQwFir68Aaw)<span style="color:magenta">שאלה 1</span>
 
 #!html
 
@@ -102,7 +102,11 @@ end
 
 #!markdown
 
-### <span style="color:magenta">שאלה 2</span>
+---
+
+#!markdown
+
+### [🎦](https://youtu.be/cCfWrXO1zhw)[😺](https://scratch.mit.edu/projects/1168628068) <span style="color:magenta">שאלה 2</span>
 
 #!html
 
@@ -146,7 +150,11 @@ end
 
 #!markdown
 
-### <span style="color:magenta">שאלה 3</span>
+---
+
+#!markdown
+
+### [🎦](https://youtu.be/xMc06apotEQ)[😺](https://scratch.mit.edu/projects/1167446607/) <span style="color:magenta">שאלה 3</span>
 
 #!html
 
@@ -156,9 +164,9 @@ when flag clicked
 ask [Enter word] and wait
 set [word v] to (answer)
 set [n v] to (1)
-set [newWord v] to (#)
+set [newWord v] to [#]
 repeat (length of (word))
-    set [tmp v] to (join (letter (n) of (word)) (#))
+    set [tmp v] to (join (letter (n) of (word)) [#])
     set [newWord v] to (join (newWord) (tmp))
     change [n v] by (1)
 end
@@ -176,7 +184,7 @@ say (newWord) for (2) seconds
 
 #!markdown
 
-שנו את התוכנית הבאה כך שעבור הקלט  
+[🎦](https://youtu.be/e_y1SqQ-X50) שנו את התוכנית הבאה כך שעבור הקלט  
 <span style="color:green">GREAT</span>  
 הדצות תגיד  
 <span style="color:green">0G1R2E3A4T5</span>  
@@ -204,6 +212,10 @@ say (newWord) for (2) seconds
 
 #!markdown
 
+#### [🎦](https://youtu.be/B3699daOd6k)[😺](https://scratch.mit.edu/projects/1167448913) <span style="color:magenta">סעיף א</span>
+
+#!markdown
+
 ![](img/q-04.png)
 
 #!html
@@ -212,7 +224,7 @@ say (newWord) for (2) seconds
 <pre class="q-4">
 define draw ([length])
 repeat [4]
-    move [length] steps
+    move ([length]) steps
     turn ccw [90] degrees
 end
 
@@ -238,6 +250,10 @@ num?
 #!markdown
 
 90
+
+#!markdown
+
+#### [🎦](https://youtu.be/1G096jLR-xg)[😺](https://scratch.mit.edu/projects/1167448913) <span style="color:magenta">סעיף ב</span>
 
 #!html
 
@@ -276,7 +292,11 @@ end
 
 #!markdown
 
-### <span style="color:magenta">שאלה 5</span>
+---
+
+#!markdown
+
+### [🎦](https://youtu.be/Ad-SxDwVd_I)[😺](https://scratch.mit.edu/projects/1167464429) <span style="color:magenta">שאלה 5</span>
 
 #!html
 
@@ -347,8 +367,15 @@ say (sod) for (2) seconds
 
 #!markdown
 
+---
+
+#!markdown
+
 ### <span style="color:magenta">שאלה 6</span>
-#### <span style="color:magenta">סעיף א</span>
+
+#!markdown
+
+#### [🎦](https://youtu.be/EWfXvJQ41D8)[😺](https://scratch.mit.edu/projects/1168359752) <span style="color:magenta">סעיף א</span>
 
 #!html
 
@@ -411,11 +438,6 @@ say (number)
 
 התותאה לא תסתיים
 
-#!markdown
-
-### <span style="color:magenta">שאלה 6</span>
-#### <span style="color:magenta">סעיף ב</span>
-
 #!html
 
 <script>scratch('q-6-4')</script>
@@ -435,6 +457,14 @@ say (number)
 #!markdown
 
 פעם אחת
+
+#!markdown
+
+---
+
+#!markdown
+
+#### [🎦](https://youtu.be/4Wx863vBxnc) [😺](https://scratch.mit.edu/projects/1168551923) <span style="color:magenta">סעיף ב</span>
 
 #!markdown
 
@@ -490,8 +520,15 @@ say (sum) for (2) seconds
 
 #!markdown
 
-### <span style="color:magenta">שאלה 7</span>
-#### <span style="color:magenta">סעיף א</span>
+---
+
+#!markdown
+
+### [😺](https://scratch.mit.edu/projects/1168621342) <span style="color:magenta">שאלה 7</span>
+
+#!markdown
+
+#### [🎦](https://youtu.be/akU04_cOic8) <span style="color:magenta">סעיף א</span>
 
 #!markdown
 
@@ -502,8 +539,8 @@ say (sum) for (2) seconds
 <script>scratch('q-7-a')</script>
 <pre class="q-7-a">
 when flag clicked
-set [pass v] to (???)
-repeat (???)
+set [pass v] to [0]
+repeat [100]
     ask [Enter your name] and wait
     set [name v] to (answer)
     ask [Enter your height] and wait
@@ -520,8 +557,11 @@ say (pass) for (2) seconds
 
 #!markdown
 
-### <span style="color:magenta">שאלה 7</span>
-#### <span style="color:magenta">סעיף ב</span>
+---
+
+#!markdown
+
+#### [🎦](https://youtu.be/ccrYvIWGm4g) <span style="color:magenta">סעיף ב</span>
 
 #!markdown
 
@@ -544,8 +584,9 @@ repeat (100)
         if <(grade) > [90]> then
             say (name) for (2) seconds
             change [pass v] by (1)
-        end
+        else
             say [The grade does not match] for (2) seconds
+        end
     else
         say [The height does not match] for (2) seconds
     end
