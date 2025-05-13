@@ -1,0 +1,588 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":"csharp","items":[{"aliases":[],"name":"csharp"}]}}
+
+#!html
+
+<script src="../eylon/scratchblocks.min.js"></script>
+<script>
+function scratch(name) {
+    scratchblocks.renderMatching('.' + name, {style: 'scratch3-high-contrast'});
+}
+</script>
+
+#!html
+
+<script>scratch('motion')</script>
+<table style="font-size:20px">
+  <tr>
+    <td class="motion" style="text-align:left;">
+      move [] steps
+    </td>
+    <td>תקדם 10 צעדים בכיוון שאתה פונה</td>
+  </tr>
+  <tr>
+    <td class="motion" style="text-align:left;">
+      turn left [90] degrees
+    </td>
+    <td>
+      תפנה שמולה 90 מעלות <br>
+      בנוסף לכיוון הנוכחי
+    </td>
+  </tr>
+  <tr>
+    <td class="motion" style="text-align:left;">
+      go to x [] y []
+    </td>
+    <td>תלך לקואורדינטות האלה</td>
+  </tr>
+  <tr>
+    <td class="motion" style="text-align:left;">
+      glide [1] secs to [random position v]
+    </td>
+    <td>תגלוש למיקום רנדומלי</td>
+  </tr>
+  <tr>
+    <td class="motion" style="text-align:left;">
+      point in direction []
+    </td>
+    <td>
+      תפנה בזווית הזאת בלי להתיחס לכיוון הנוכחי <br>
+      0 - למעלה<br>
+      90 - ימינה<br>
+      -90 - שמולה<br>
+      180 - למטה
+    </td>
+  </tr>
+  <tr>
+    <td class="motion" style="text-align:left;">
+      change x by []
+    </td>
+    <td>הנוכחי <tt>x</tt> תוסיף לקורדינטה</td>
+  </tr>
+  <tr>
+    <td class="motion" style="text-align:left;">
+      set y to []
+    </td>
+    <td>
+      <tt>y</tt> קבע קואורדינתה <br>
+      בלי להיתיחס למיקומ הנוכחי 
+    </td>
+  </tr>
+</table>
+
+#!markdown
+
+___
+
+#!html
+
+<script>scratch('sensing')</script>
+<table style="font-size:20px">
+  <tr>
+    <td class="sensing" style="text-align:left;">
+        ask [Enter number] and wait
+    </td>
+    <td>חכה עד שמשתמש מכניס קלט</td>
+  </tr>
+  <tr>
+    <td class="sensing" style="text-align:left;">
+        (answer)
+    </td>
+    <td>הקלט שהוכנס נמצא במשתנה הזה</td>
+  </tr>
+  <tr>
+    <td class="sensing" style="text-align:left;">
+        say [Hello] for [2] seconds
+    </td>
+    <td>תגיד למשך 2 שהיות</td>
+  </tr>
+</table>
+
+#!markdown
+
+---
+
+#!html
+
+<script>scratch('control')</script>
+<table style="font-size:20px">
+  <tr>
+    <td class="control" style="text-align:left;">
+      forever
+    </td>
+    <td>תחזור לפעולות שבפנים לנצח</td>
+  </tr>
+  <tr>
+    <td class="control" style="text-align:left;">
+      repeat [10]
+    </td>
+    <td>תחזור לפעוות שבפנים 10 פעמים</td>
+  </tr>
+  <tr>
+    <td class="control" style="text-align:left;">
+      if <> then
+    </td>
+    <td>אם התנאי קורה תעשה את הפעולות שבפנים</td>
+  </tr>
+  <tr>
+    <td class="control" style="text-align:left;">
+      if <> then
+      else
+    </td>
+    <td>
+      <tt>then</tt> אם התנאי קורה תעשה את הפעולות שבתוך <br>
+      <tt>else</tt> אחרת תעשה את הפעולות שבתוך
+    </td>
+  </tr>
+  <tr>
+    <td class="control" style="text-align:left;">
+      repeat until <>
+    </td>
+    <td>חזור על הפעולות כל עוד התנאי <b>לא נכון</b></td>
+  </tr>
+</table>
+
+#!markdown
+
+---
+
+#!html
+
+<script>scratch('ops-math')</script>
+<table style="font-size:20px">
+  <tr>
+    <td class="ops-math" style="text-align:left;">
+        (() + ())
+    </td>
+    <td>סכום של שני ערכים</td>
+  </tr>
+  <tr>
+    <td class="ops-math" style="text-align:left;">
+        (() - ())
+    </td>
+    <td>הפרש של שני ערכים</td>
+  </tr>
+  <tr>
+    <td class="ops-math" style="text-align:left;">
+        (() * ())
+    </td>
+    <td>מכפלה של שני ערכים</td>
+  </tr>
+  <tr>
+    <td class="ops-math" style="text-align:left;">
+        (() / ())
+    </td>
+    <td>חילוק של שני ערכים</td>
+  </tr>
+  <tr>
+    <td class="ops-math" style="text-align:left;">
+        pick random [1] to [10]
+    </td>
+    <td>לבחור מספר רנדומלי בין 1 ל-10</td>
+  </tr>
+</table>
+
+#!markdown
+
+---
+
+#!html
+
+<script>scratch('ops-if')</script>
+<table style="font-size:20px">
+  <tr>
+    <td class="ops-if" style="text-align:left;">
+        <() > ()>
+    </td>
+    <td>האם ערך שמלי גדול יותר מערך ימיני</td>
+  </tr>
+  <tr>
+    <td class="ops-if" style="text-align:left;">
+        <() < ()>
+    </td>
+    <td>האם ערך שמלי קטו יותר מערך ימיני</td>
+  </tr>
+  <tr>
+    <td class="ops-if" style="text-align:left;">
+        <() = ()>
+    </td>
+    <td>האם ערך שמלי שווה מערך ימיני</td>
+  </tr>
+  <tr>
+    <td class="ops-if" style="text-align:left;">
+        <<> and <>>
+    </td>
+    <td>האם שני התנאיים מתקיימים ביחד</td>
+  </tr>
+  <tr>
+    <td class="ops-if" style="text-align:left;">
+        <<> or <>>
+    </td>
+    <td>
+      האם אחד ההתנאיים מתקיימ <br>
+      שניהם גם טוב
+    </td>
+  </tr>
+  <tr>
+    <td class="ops-if" style="text-align:left;">
+        not <>
+    </td>
+    <td>האם תנאי הזה <b>לא מתקיים</b></td>
+  </tr>
+</table>
+
+#!markdown
+
+---
+
+#!html
+
+<script>scratch('ops-funcs')</script>
+<table style="font-size:20px">
+  <tr>
+    <td class="ops-funcs" style="text-align:left;">
+        (() mod ())
+    </td>
+    <td>מחלקים ערך שמאלי בערך ימיני ולוקחים שערית</td>
+  </tr>
+  <tr>
+    <td class="ops-funcs" style="text-align:left;">
+        round ()
+    </td>
+    <td>קירוב למספר שלם</td>
+  </tr>
+  <tr>
+    <td class="ops-funcs" style="text-align:left;">
+        [abs v] of ()
+    </td>
+    <td>לקחת ערך מוחלת של</td>
+  </tr>
+  <tr>
+    <td class="ops-funcs" style="text-align:left;">
+        [floor v] of ()
+    </td>
+    <td>לזרוק כל סיפרות אחרי ניקודה</td>
+  </tr>
+</table>
+
+#!markdown
+
+---
+
+#!html
+
+<script>scratch('ops-str')</script>
+<table style="font-size:20px">
+  <tr>
+    <td class="ops-str" style="text-align:left;">
+        join [apple] [banana]
+    </td>
+    <td>לחבר (לשרשר) שתי מחרוזות</td>
+  </tr>
+  <tr>
+    <td class="ops-str" style="text-align:left;">
+        letter [] of [apple]
+    </td>
+    <td>לקחת תוו במיקום מסויים של מחרוזת</td>
+  </tr>
+  <tr>
+    <td class="ops-str" style="text-align:left;">
+        length of [apple]
+    </td>
+    <td>
+      כמה תווים יש במחרוזת <br>
+      עורך של מחרוזת
+    </td>
+  </tr>
+  <tr>
+    <td class="ops-str" style="text-align:left;">
+        <[apple] contains [a] ?>
+    </td>
+    <td>האם תוו מסויים נמצה בתוך מחרוזת</td>
+  </tr>
+</table>
+
+#!markdown
+
+---
+
+#!html
+
+<script>scratch('vars')</script>
+<table style="font-size:20px">
+  <tr>
+    <td class="vars" style="text-align:left;">
+      set [sum v] to [0]
+    </td>
+    <td><tt>sum</tt> לקבוע ערך של משתמה</td>
+  </tr>
+  <tr>
+    <td class="vars" style="text-align:left;">
+      change [count v] by [1] 
+    </td>
+    <td><tt>count</tt> להוסיף 1 למשתנה</td>
+  </tr>
+  <tr>
+    <td class="vars" style="text-align:left;">
+      (num)
+    </td>
+    <td><tt>num</tt> לקחת ערך של משתנה</td>
+  </tr>
+</table>
+
+#!markdown
+
+---
+
+#!html
+
+<script>scratch('pen')</script>
+<table style="font-size:20px">
+  <tr>
+    <td class="pen" style="text-align:left;">
+        erase all
+    </td>
+    <td>למחוק כל משציירו עד עכשיו</td>
+  </tr>
+  <tr>
+    <td class="pen" style="text-align:left;">
+        pen down
+    </td>
+    <td>מעכשיו כל תנוע של דמות תשיר קוו </td>
+  </tr>
+  <tr>
+    <td class="pen" style="text-align:left;">
+        pen up
+    </td>
+    <td>על תשיר קוו בתנועות הבאות</td>
+  </tr>
+  <tr>
+    <td class="pen" style="text-align:left;">
+        stamp
+    </td>
+    <td>תשיר חותמת של דמות</td>
+  </tr>
+</table>
+
+#!markdown
+
+---
+
+#!html
+
+<script>scratch('mod')</script>
+<table style="font-size:20px">
+  <tr>
+    <td class="mod" style="text-align:left;">
+      ((10) mod (2))
+    </td>
+    <td><tt>0</td>
+  </tr>
+  <tr>
+    <td class="mod" style="text-align:left;">
+      ((11) mod (2))
+    </td>
+    <td><tt>1</td>
+  </tr>
+  <tr>
+    <td class="mod" style="text-align:left;">
+      ((1) mod (2))
+    </td>
+    <td><tt>1</td>
+  </tr>
+  <tr>
+    <td class="mod" style="text-align:left;">
+      ((0) mod (2))
+    </td>
+    <td><tt>0</td>
+  </tr>
+  <tr>
+    <td class="mod" style="text-align:left;">
+      ((11) mod (3))
+    </td>
+    <td><tt>2</td>
+  </tr>
+  <tr>
+    <td class="mod" style="text-align:left;">
+      ((12) mod (3))
+    </td>
+    <td><tt>0</td>
+  </tr>
+</table>
+
+#!markdown
+
+---
+
+#!html
+
+<script>scratch('div')</script>
+<table style="font-size:20px">
+  <tr>
+    <td class="div" style="text-align:left;">
+      [floor v] of ((10) / (2))
+    </td>
+    <td><tt>5</td>
+  </tr>
+  <tr>
+    <td class="div" style="text-align:left;">
+      [floor v] of ((11) / (2))
+    </td>
+    <td><tt>5</td>
+  </tr>
+  <tr>
+    <td class="div" style="text-align:left;">
+      [floor v] of ((10) / (3))
+    </td>
+    <td><tt>3</td>
+  </tr>
+</table>
+
+#!markdown
+
+---
+
+#!html
+
+<script>scratch('dec')</script>
+<table style="font-size:20px">
+  <tr>
+    <td class="dec" style="text-align:left;">
+      ((1234) mod (10))
+    </td>
+    <td><tt>4</td>
+  </tr>
+  <tr>
+    <td class="dec" style="text-align:left;">
+      [floor v] of ((1234) / (10))
+    </td>
+    <td><tt>123</td>
+  </tr>
+  <tr>
+    <td class="dec" style="text-align:left;">
+      ((1234) mod (100))
+    </td>
+    <td><tt>34</td>
+  </tr>
+  <tr>
+    <td class="dec" style="text-align:left;">
+      [floor v] of ((1234) / (100))
+    </td>
+    <td><tt>12</td>
+  </tr>
+</table>
+
+#!markdown
+
+---
+
+#!html
+
+<script>scratch('if-then')</script>
+<table style="font-size:20px">
+  <tr>
+    <td class="if-then" style="text-align:left;">
+      set [wow v] to (10)
+      if <<((wow) - (2)) = ((wow) / (2))> or <((2) + (wow)) > ((2) * (wow))>> then
+          say [אמת]
+      else
+          say [שקר]
+      end
+    </td>
+    <td><tt>דמות תגיד שקר</td>
+  </tr>
+</table>
+
+#!markdown
+
+---
+
+#!html
+
+<script>scratch('q-2')</script>
+<pre class="q-2">
+when flag clicked
+ask [Enter a number between 1 to 10] and wait
+set [color v] to (answer)
+if <(color) < (7)> then
+    if <(color) > (3)> then
+        say [Yellow] for (2) seconds
+    else
+        say [Green] for (2) seconds
+    end
+else
+    if <<(color) = (9)> or <(color) = (10)>> then
+        say [Red] for (2) seconds
+    else
+        say [Orange] for (2) seconds
+    end
+end
+</pre>
+
+#!markdown
+
+| answer    | color     |
+| --------  | -------   |
+| 5         | Yellow  |
+| 7         | Orange          |
+| 10        | Red          |
+| 3         | Green          |
+
+#!markdown
+
+| answer    | color     |
+| --------  | -------   |
+| 1-3       |  Green         |
+| 9-10      |  Red         |
+| 4-6       |  Yellow         |
+| 7-8       |  Orange         |
+
+#!markdown
+
+---
+
+#!html
+
+<script>scratch('loops')</script>
+<table style="font-size:20px">
+  <tr>
+    <th style="text-align:left;"><b>Code</th>
+    <th  style="text-align:left;"><b>num</th>
+    <th  style="text-align:left;"><b>sum</th>
+  </tr>
+  <tr>
+    <td class="loops" style="text-align:left;">
+        set [num v] to [10]
+        repeat [5]
+            change [num v] by [-1]
+        end
+    </td>
+    <td><tt>5</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="loops" style="text-align:left;">
+        set [num v] to [1]
+        set [sum v] to [0]
+        repeat until <(num) = [10]>
+            change [sum v] by (num)
+            set [num v] to ((num) + [1])
+        end
+    </td>
+    <td><tt>10</td>
+    <td><tt>45</td>
+  </tr>
+  <tr>
+    <td class="loops" style="text-align:left;">
+        set [num v] to [987654321]
+        set [sum v] to [0]
+        repeat until <(num) = [0]>
+            change [sum v] by ((num) mod [10])
+            set [num v] to ([floor v] of ((num) / [10]))
+        end
+    </td>
+    <td><tt>0</td>
+    <td><tt>45</td>
+  </tr>
+</table>
