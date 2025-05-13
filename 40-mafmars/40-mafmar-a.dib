@@ -218,9 +218,9 @@ say (newWord) for (2) seconds
 <script>scratch('q-4')</script>
 <pre class="q-4">
 define draw ([length])
-repeat [???]
+repeat [4]
     move ([length]) steps
-    turn ccw [???] degrees
+    turn ccw [90] degrees
 end
 
 when flag clicked
@@ -233,7 +233,7 @@ set [num v] to (50)
 repeat (4)
     draw (num)
     turn ccw (90) degrees
-    change [??? v] by (10)
+    change [num v] by (10)
 end
 </pre>
 
@@ -244,7 +244,7 @@ num?
 
 #!markdown
 
-???
+90
 
 #!html
 
@@ -279,7 +279,7 @@ end
 
 #!markdown
 
-???
+2
 
 #!markdown
 
@@ -319,12 +319,12 @@ say (sod) for (2) seconds
 
 | answer    | num       |   sod     | dig       | repeat until...   | if...     | say       |
 | --------  | -------   | -------   | -------   | -------           | -------   | -------   |
-| 2643      |           |           |           |                   |           |           |
-| 2643      |           |           |           |                   |           |           |
-| 2643      |           |           |           |                   |           |           |
-| 2643      |           |           |           |                   |           |           |
-| 2643      |           |           |           |                   |           |           |
-| 2643      |           |           |           |                   |           |           |
+| 2643      |       2643    |  0         |       3    |          yes         |   y        |           |
+| 2643      |    264  |   3    |    3       |   n                |      y    |           |
+| 2643      |    26      |   4      |        4   |      n            |    y       |           |
+| 2643      |    2      |         6  |    6     |          n         |      y     |           |
+| 2643      |        0   |       6    |   2        |       n            |    n       |           |
+| 2643      |         0  |       6    |           |        y           |           |    6       |
 | 2643      |           |           |           |                   |           |           |
 | 2643      |           |           |           |                   |           |           |
 
@@ -336,12 +336,12 @@ say (sod) for (2) seconds
 
 | num   | [v] |
 | ----  | --- |
-| 8     | [-] |
-| 189   | [-] |
-| 875   | [-] |
-| 2831  | [-] |
-| 642   | [-] |
-| 78    | [-] |
+| 8     | [v] |
+| 189   | [n] |
+| 875   | [y] |
+| 2831  | [y] |
+| 642   | [n] |
+| 78    | [y] |
 
 #!markdown
 
@@ -354,7 +354,7 @@ say (sod) for (2) seconds
 | 1     | [-] |
 | 2     | [-] |
 | 3     | [-] |
-| 4     | [-] |
+| 4     | [v] |
 | 5     | [-] |
 | 6     | [-] |
 
@@ -386,6 +386,8 @@ say (number)
 
 כמה פעמים תתבצע הלולאה?  
 
+פעמיים
+
 #!html
 
 <script>scratch('q-6-2')</script>
@@ -400,6 +402,8 @@ say (number)
 </pre>
 
 #!markdown
+
+הלולאה לא תסתיים
 
 כמה פעמים תתבצע הלולאה?  
 
@@ -416,6 +420,9 @@ say (number)
 </pre>
 
 #!markdown
+
+הלולאה לא תסתיים
+
 
 כמה פעמים תתבצע הלולאה?  
 
@@ -434,6 +441,8 @@ say (number)
 #!markdown
 
 כמה פעמים תתבצע הלולאה?  
+
+הלולאה לא תסתיים
 
 #!markdown
 
@@ -465,6 +474,8 @@ say (sum) for (2) seconds
 
 #!markdown
 
+כן
+
 האם זה עובד?  
 
 #!html
@@ -484,6 +495,8 @@ say (sum) for (2) seconds
 </pre>
 
 #!markdown
+
+כן
 
 האם זה עובד?  
 
@@ -508,20 +521,20 @@ say (sum) for (2) seconds
 <script>scratch('q-7-a')</script>
 <pre class="q-7-a">
 when flag clicked
-set [pass v] to [???]
-repeat [???}
+set [pass v] to [0]
+repeat [100}
     ask [Enter your name] and wait
     set [name v] to (answer)
     ask [Enter your height] and wait
     set [height v] to (answer)
     ask [Enter your grade] and wait
     set [grade v] to (answer)
-    if <<(grade) > [???]> and <(???) > [160]>> then
+    if <<(grade) > [90]> and <(height) > [160]>> then
         say (name) for (2) seconds
-        change [pass v] by [???]
+        change [pass v] by [1]
     end
 end
-say (???) for (2) seconds
+say (pass) for (2) seconds
 </pre>
 
 #!markdown
@@ -546,18 +559,18 @@ repeat (100)
     ask [Enter your name] and wait
     set [name v] to (answer)
     ask [Enter your height] and wait
-    set [height v] to (???)
-    if <(height) > [???]> then
+    set [height v] to (answer)
+    if <(height) > [160]> then
         ask [Enter your grade] and wait
-        set [??? v] to (???)
-        if <(grade) > [???]> then
+        set [grade v] to (answer)
+        if <(grade) > [90]> then
             say (name) for (2) seconds
             change [pass v] by (1)
         else
-            say [The ??? does not match] for (2) seconds
+            say [The grade does not match] for (2) seconds
         end
     else
-        say [The ??? does not match] for (2) seconds
+        say [The height does not match] for (2) seconds
     end
 
 end
